@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - Augmented Reality (AR) and Virtual Reality (VR) (20th - 21st century)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> English</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Theme</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Languages</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-6/Page-6-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-6/Page-6-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-6/Page-6-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-6/Page-6-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Sign up</b></button>
+            <button id="connectBtn"><b>Logging</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Log out</b><div id="statusText"><b>Not logged</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Sign up</b></button>
+            <button onclick="showLoginPopup()"><b>Logging</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Languages 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-6/Page-6-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-6/Page-6-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-6/Page-6-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-6/Page-6-es.html" onclick="changeLanguage('es')">Español</a></li>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Search <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Theme 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>Augmented Reality (AR) and Virtual Reality (VR) (20th - 21st century)</h1>
+    <h2>Augmented Reality (1990s)</h2>
+        <p>
+            Augmented reality (AR)</b>, developed in the <b>1990s</b>, is a technology that superimposes digital elements on our real-time environment. Unlike <b>virtual reality</b>, which immerses the user in an entirely virtual world, AR enriches the physical world by adding visual and audio information 
+            or interactive, visible through devices such as <b>smart glasses</b>, <b>smartphones</b> or <b>tablets</b>.
+<br>
+            The concept of <b>augmented reality</b> took shape in the <b>1960s</b> with the first visualization systems, but it was in the <b>1990s</b> that technology became more concrete. In <b>1992</b>, researcher <b>Tom Caudell</b> introduced the term "<b>augmented reality</b>" to describe a tool used by <b>Boeing</b> to assist technicians in aircraft assembly. 
+            Soon after, researchers design systems combining <b>cameras</b>, <b>sensors</b> and <b>displays</b> to insert virtual images into the user’s field of view.
+<br>
+            AR first finds applications in professional fields. It is used for training <b>surgeons</b>, <b>industrial maintenance</b> and <b>army</b>, where it provides critical information directly to the field of vision of <b>soldiers</b>. In <b>architecture</b> and <b>design</b>, AR facilitates the visualization of projects by 
+            integrating 3D models into real environments.
+<br>
+            In the <b>2000</b> years, the rise of <b>smartphones</b> and <b>integrated cameras</b> democratizes AR. Apps like <b>Pokémon Go</b> (<b>2016</b>) are popularising this technology to the general public by integrating it into entertainment. At the same time, innovations like <b>HoloLens</b> from <b>Microsoft</b> or <b>Magic Leap</b> helmets push AR’s limits in 
+            the <b>education</b>, <b>health</b> and <b>commerce</b> sectors.
+<br>
+            <b>Augmented reality</b> is also transforming the user experience in areas such as <b>marketing</b>, <b>retail</b> or <b>tourism</b>, offering immersive and interactive solutions. It allows, for example, to test furniture in the living room before buying or to view lost historic monuments.
+            Although promising, AR raises technological challenges such as the <b>computing power</b> required, as well as ethical issues related to <b>privacy</b> and <b>dependency</b>. Nevertheless, it remains a rapidly expanding technology with immense potential to improve the interaction between the physical and digital worlds.
+        </p>
+ 
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/HiVN3nWgCnA" title="La Réalité Augmentée - 60 secondes pour comprendre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Virtual reality (1980s - present)
+        <p>
+            <b>Virtual reality (VR)</b> is an immersive technology that immerses the user in a simulated environment of <b>3D</b>, often interactive. This experience is made possible by <b>helmets</b> with displays, <b>motion sensors</b> and sometimes <b>manual controllers</b>, which allow you to navigate and interact in a virtual world. Although its first 
+            The foundations are laid as early as <b>1960</b>, VR begins to take concrete form in the 1980s</b> thanks to significant technological advances.
+<br>
+            The term "<b>virtual reality</b>" is popularized by <b>Jaron Lanier</b>, founder of <b>VPL Research</b>, which develops <b>VR helmets</b> and <b>data gloves</b> for touch interaction with digital environments. These systems, although cutting edge, are expensive and limited by the <b>computing power</b> of the time, which limits their adoption to specialized sectors 
+            such as <b>research</b>, <b>medicine</b> or <b>military training</b>.
+<br>
+            In the 1990s, VR attracted the attention of the general public through experiments such as arcade simulators or immersive devices presented by companies like <b>SEGA</b> and <b>Nintendo</b>. However, these early attempts are hampered by <b>cost</b> issues, low <b>resolution</b> and limited effectiveness, preventing mass adoption.
+            The beginning of <b>2010</b> marked a new era in VR with the introduction of more powerful and affordable helmets such as the Oculus Rift, followed by competing products like the <b>HTC Vive</b>, the <b>PlayStation VR</b> or the <b>Meta Quest</b>. These devices use <b>high definition displays</b>, precise <b>sensors</b> and sophisticated <b>algorithms</b> to provide immersive experience without 
+            previous. The VR then extends to many areas, including <b>video games</b>, <b>vocational training</b>, <b>medicine</b>, <b>architecture</b> and even <b>virtual tourism</b>.
+<br>
+            Today, VR continues to evolve with the integration of technologies such as <b>eye tracking</b>, <b>mixed reality</b> (which combines VR and augmented reality), and haptic accessories that enhance the sensory experience. It also opens up new perspectives in areas such as <b>education</b> by allowing realistic simulations, or <b>wellness</b>, 
+            by providing a soothing environment.
+            Despite its promises, VR still has challenges to overcome, especially in terms of <b>cost</b>, <b>accessibility</b> and <b>comfort</b> (cybersickness). However, it remains a key technology in digital transformation, with unlimited potential to reinvent our interactions with the virtual world.
+        </p>
+	
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/lqCj_kvEu7k" title="La Réalité Virtuelle - 60 secondes pour comprendre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Mixed Reality (21st century)</h2>
+        <p>
+            The <b>mixed reality (MR)</b> that emerged in the 21st century combines the characteristics of <b>virtual reality (VR)</b> and <b>augmented reality (AR)</b>, allowing interactive digital objects to be integrated into a real-world environment while providing deeper immersion than AR alone. It allows the user to interact simultaneously with physical and virtual elements, 
+            while maintaining an awareness of their physical environment. This concept was popularized by companies like <b>Microsoft</b> with its <b>HoloLens</b> headset, which is one of the first devices to offer a mixed reality experience.
+<br>
+            Unlike AR, which overlays digital information on the real world, AR allows for a more complex interaction between the real and virtual worlds. For example, virtual objects can be placed in a real space and respond to user actions more realistically, as if the virtual object was actually there. This type of interaction is rendered 
+            Advanced technologies such as <b>object recognition</b>, <b>3D mapping</b> and <b>motion detection</b>.
+<br>
+            The applications of <b>mixed reality</b> are wide and varied. In the field of <b>medicine</b>, it is used for surgical simulations, allowing professionals to practice in a virtual environment before performing real operations. In <b>education</b>, RM transforms learning by creating immersive experiences where students can interact with 
+            3D models of objects or concepts, making complex materials more accessible. In the <b>architecture</b> sector, mixed reality allows architects and clients to visualize projects in 3D in a real space before they are built.
+<br>
+            Mixed reality</b> is also growing in the field of <b>entertainment</b>, with games and films that use interactive virtual elements in a real setting. In the business world, RM finds applications in <b>training</b>, <b>remote collaboration</b> and <b>product design</b>. By combining the benefits of AR and VR, <b>mixed reality</b> paves the way for 
+            More fluid and dynamic digital experiences that were not possible before.
+            Although RM is still a developing technology, it already has the potential to profoundly transform industrial, educational and creative sectors. With the continuous improvement of interfaces and devices, the <b>mixed reality</b> could well become an essential tool in the evolution of our interaction with the digital world.
+        </p>
+
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/XtTxCqPbCds" title="Qu&#39;est ce que la réalité mixte?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <a class="Bottom1" href="../Page-7/Page-7-fr.html">Suivant</a>
+	<a class="Bottom2" href="../Page-5/Page-5-fr.html">Précédent</a>
+	<a class="Bottom3" href="../index/index-fr.html">Accueil</a>
+
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

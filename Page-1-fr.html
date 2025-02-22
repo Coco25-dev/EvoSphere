@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - L’Antiquité et les origines de l’écriture (environ 3000 av. J.-C.)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Français</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Rechercher...">
+            <button class="SearchBtn" onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Theme</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Langues</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-1/Page-1-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-1/Page-1-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-1/Page-1-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-1/Page-1-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>S'inscrire</b></button>
+            <button id="connectBtn"><b>Se connecter</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Se déconnecter</b><div id="statusText"><b>Non connecté</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>S'inscrire</b></button>
+            <button onclick="showLoginPopup()"><b>Se connecter</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav" id="myBlock" class="block">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Langues 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-1/Page-1-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-1/Page-1-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-1/Page-1-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-1/Page-1-es.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Recherche <button class="SearchBtn" onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Theme 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>L’Antiquité et les origines de l’écriture (environ 3000 av. J.-C.)</h1>
+	<h2>Écriture cunéiforme</h2>
+		<p>
+			L'écriture cunéiforme, apparue en <b>Mésopotamie</b> vers 3300 av. J.-C., est considérée comme l'un des premiers 
+			systèmes d'écriture de l'histoire. Développée par les <b>Soumériens</b>, elle servait initialement à des fins administratives 
+			et comptables, notamment pour enregistrer les échanges commerciaux et gérer les stocks de denrées agricoles. Le terme 
+			"cunéiforme" provient du latin <b>cuneus</b>, signifiant "coin", en référence à la forme des caractères en clous ou en coins, obtenus 
+			en pressant un calame taillé dans une tige de roseau sur des tablettes d'argile humide. Une fois gravées, ces tablettes étaient séchées 
+			au soleil ou cuites pour en assurer la pérennité.
+<br>
+            À l'origine, l'écriture cunéiforme était <b>pictographique</b> : chaque symbole représentait un objet ou une idée. Par exemple, un dessin de tête 
+			de bœuf signifiait "bœuf". Avec le temps, ces dessins ont été simplifiés et standardisés, évoluant vers un système de signes abstraits et phonétiques. 
+			Cette évolution a permis de transcrire non seulement des noms propres et des idées complexes, mais aussi des langues diverses comme le <b>sumérien</b>, l’<b>akkadien</b>, 
+			le <b>babylonien</b> et l’<b>assyrien</b>, ce qui a favorisé son adoption dans une vaste région du Proche-Orient.
+<br>
+            Au-delà de la simple gestion économique, l'écriture cunéiforme a été utilisée pour des textes religieux, des codes de lois (comme le célèbre <b>Code de Hammurabi</b>), 
+            des récits littéraires (tels que <b>L'Épopée de Gilgamesh</b>), et des documents historiques. Elle a permis la création des premières bibliothèques, comme celle d'<b>Assurbanipal</b> 
+            à Ninive, où des milliers de tablettes furent retrouvées.
+            Ce système a perduré pendant plus de 3 000 ans, avant de disparaître progressivement avec l’avènement des alphabets plus simples comme ceux des <b>Phéniciens</b>.
+<br>
+			L'écriture cunéiforme représente un tournant majeur dans l'histoire de l'humanité, marquant le passage de la préhistoire à l'histoire et ouvrant la voie à la conservation 
+			et à la transmission durable du savoir à travers les âges. Aujourd'hui, son déchiffrement au XIXe siècle a permis de mieux comprendre les civilisations anciennes et leur contribution à notre patrimoine culturel.
+		</p>
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/8vW0lzGBArk" title="L&#39;invention de l&#39;écriture (Hiéroglyphe - Cunéiforme) - Le Voyage vers la Civilisation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	<h2>Papyrus</h2>
+		<p>
+			Le <b>papyrus</b> est l’un des premiers supports d’écriture connus, utilisé principalement par les anciennes civilisations égyptiennes à partir de 3000 av. J.-C. Fabriqué à partir de la plante 
+			du même nom, qui poussait en abondance le long du <b>Nil</b>, il représentait une avancée majeure par rapport aux tablettes d’argile utilisées en Mésopotamie. La fabrication du papyrus consistait 
+			à couper les tiges de la plante en fines bandes, qui étaient disposées en couches croisées, martelées, puis collées entre elles grâce à la sève naturelle. Après séchage, on obtenait une feuille 
+			souple, légère et facile à transporter.
+<br>
+            Le papyrus était utilisé pour écrire avec des pinceaux ou des calames trempés dans de l’encre à base de suie ou de pigments naturels. Il servait principalement à enregistrer des textes religieux, administratifs 
+            et littéraires, mais aussi des lettres et des contrats juridiques. Les feuilles de papyrus pouvaient être assemblées pour former des rouleaux, facilitant ainsi la conservation et la consultation des documents. 
+            Ces rouleaux, appelés <b>volumen</b>, étaient souvent stockés dans des bibliothèques, comme la célèbre <b>bibliothèque d'Alexandrie</b>.
+<br>
+            L’utilisation du papyrus s’est rapidement répandue dans tout le bassin méditerranéen grâce au commerce égyptien. Toutefois, sa fragilité face à l’humidité et son coût relativement élevé limitaient son usage à des 
+            documents importants. À partir du IIIe siècle après J.-C., il fut progressivement remplacé par le <b>parchemin</b>, fabriqué à partir de peaux animales, qui était plus durable et mieux adapté aux climats humides.
+<br>
+			Malgré cela, le papyrus reste un symbole des débuts de l’écriture et de la transmission du savoir. Les fragments retrouvés aujourd'hui, grâce aux conditions arides de l'Égypte, nous offrent des témoignages précieux 
+			sur la culture, la religion et la vie quotidienne de l'Antiquité. Il constitue un jalon essentiel dans l’histoire des supports d’écriture, reliant les premières civilisations aux avancées technologiques ultérieures.
+		</p>
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/v0K3dnwAoKg" title="Papyrus (toi-même)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Stylus et tablettes de cire</h2>
+		<p>
+			Les <b>stylus</b> et les <b>tablettes de cire</b> étaient des outils d’écriture largement utilisés dans l’Antiquité, en particulier par les Grecs et les Romains. La tablette de cire consistait en un cadre en bois rempli d’une fine 
+			couche de cire, formant une surface réutilisable pour écrire. Le stylus, ou stylet, était un instrument pointu en métal, en os ou en bois, utilisé pour graver des lettres ou des chiffres dans la cire. L’autre extrémité 
+			du stylus, aplatie, permettait d’effacer les inscriptions en lissant la cire, rendant ce support pratique pour des écrits temporaires.
+<br>
+            Ces tablettes étaient utilisées pour des tâches variées, allant de la prise de notes et de la rédaction de documents administratifs à l’enseignement. Les élèves, par exemple, s’en servaient pour pratiquer l’écriture et les 
+            mathématiques. Les tablettes pouvaient être reliées entre elles pour former des <b>diptyques</b> ou des <b>triptyques</b>, augmentant ainsi l’espace disponible pour écrire, ce qui les rendait idéales pour des textes plus longs, comme des contrats ou des lettres.
+<br>
+            Le principal avantage des tablettes de cire résidait dans leur <b>réutilisabilité</b>, en contraste avec des supports plus coûteux comme le papyrus ou le parchemin. Elles étaient particulièrement appréciées dans les environnements où les écrits devaient être 
+            modifiés ou corrigés fréquemment. Cependant, leur durabilité était limitée : la cire pouvait fondre sous l’effet de la chaleur ou se détériorer avec le temps.
+<br>
+            Ces outils étaient largement répandus dans tout l’Empire romain et sont restés en usage pendant plusieurs siècles, jusqu’à l’avènement du <b>papier</b>. Leur simplicité et leur caractère économique en ont fait des supports essentiels pour la vie quotidienne, notamment 
+            pour les communications rapides et les travaux d’apprentissage. Les stylus et tablettes de cire sont aujourd’hui un témoignage fascinant de la créativité des civilisations anciennes pour répondre à leurs besoins pratiques en matière d’écriture.
+		</p>
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/AeisV2eZXb4" title="HA#5 : Tablettes de cire, 33 siècles d&#39;écriture !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+		<button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+	<a class="Bottom1" href="../Page-2/Page-2-fr.html">Suivant</a>
+	<a class="Bottom2" href="../index/index-fr.html">Accueil</a>
+    
+	<script src="../Main.js"></script>
+
+</body>
+</html>

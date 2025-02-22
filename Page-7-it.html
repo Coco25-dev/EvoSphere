@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+	<link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - Tecnologie moderne (2020 e oltre)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Italiano</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Ricerca...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Tema</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Lingue</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-7/Page-7-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-7/Page-7-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-7/Page-7-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-7/Page-7-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Registrarsi</b></button>
+            <button id="connectBtn"><b>Accedere</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Disconnettersi</b><div id="statusText"><b>Non connesso</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Registrarsi</b></button>
+            <button onclick="showLoginPopup()"><b>Accedere</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Lingue 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-7/Page-7-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-7/Page-7-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-7/Page-7-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-7/Page-7-es.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Ricerca <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Tema 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>Tecnologie moderne (2020 e oltre)</h1>
+    <h2>E-reader intelligenti</h2>
+        <p>
+            Le <b>e-reader</b> sono nate all'inizio degli anni 2000 e rappresentano un importante cambiamento nel modo di leggere i <b>libri digitali</b>. Questi apparecchi, dedicati alla lettura di <b>e-books</b>, sono dotati di schermi a <b>inchiostro elettronico (e-ink)</b> che riproducono l'aspetto della carta e offrono una lettura piacevole, senza abbagliamento o 
+            l'affaticamento visivo spesso causato da <b>schermi tradizionali</b>. Le e-reader intelligenti, come il <b>Kindle</b> di Amazon, il <b>Kobo</b> di Rakuten o il <b>Nook</b> di Barnes & Noble, sono progettate per essere leggere, portatili ed ergonomiche, permettendo agli utenti di leggere comodamente per ore.
+<br>
+            Uno dei vantaggi principali delle e-reader intelligenti è la loro autonomia. Grazie all'inchiostro elettronico, questi dispositivi consumano pochissima energia, il che permette loro di funzionare per diverse settimane con una sola carica. Oltre al loro basso consumo energetico, hanno molte caratteristiche che arricchiscono l'esperienza di lettura. 
+            Gli eReader consentono di personalizzare il display, regolando dimensioni, carattere e luminosità per soddisfare le preferenze di ogni lettore.
+<br>
+            Le moderne eReader sono inoltre collegate a piattaforme di distribuzione di eBook, consentendo agli utenti di acquistare, scaricare e archiviare migliaia di titoli direttamente sul dispositivo. Inoltre, gli eReader intelligenti offrono funzioni come la presa di appunti, i segnalibri e la ricerca nel testo, che consente 
+            Una più profonda interazione con il contenuto. Alcune sono dotate di illuminazione integrata, che consente la lettura in ambienti scuri, mentre altre sono resistenti all'acqua e offrono una maggiore durata.
+<br>
+            Le e-reader intelligenti hanno anche facilitato l'accesso alla lettura digitale, riducendo i costi di produzione e distribuzione dei libri. Hanno contribuito a democratizzare l'accesso ad una vasta biblioteca di libri, in particolare per i lettori avidi o coloro che non dispongono di spazio sufficiente per conservare i libri fisici. Alcuni e-reader includono 
+            anche opzioni di abbonamento a servizi di lettura, che consentono l'accesso ad un'ampia selezione di libri per un abbonamento mensile.
+            Sebbene le e-reader siano diventate più popolari, coesistono ancora con i libri stampati. Tuttavia, rappresentano un compromesso tra la comodità della lettura digitale e la sensazione di leggere su carta, con vantaggi innegabili per i lettori frequenti e coloro che cercano praticità.
+        </p>
+    
+ 
+    <h2>IA e trattamento del linguaggio naturale</h2>
+        <p>
+            L'intelligenza artificiale (AI) e il linguaggio naturale (TLN) sono una potente combinazione che consente alle macchine di comprendere, interpretare e generare linguaggio umano in modo fluido e contestualmente pertinente. L'intelligenza artificiale, come settore dell'informatica, mira a creare sistemi in grado di svolgere compiti che normalmente richiedono intelligenza 
+            umana, come il riconoscimento vocale, il processo decisionale e la comprensione dei testi. Il TLN, una sottodisciplina dell'IA, si concentra specificamente sull'interazione tra computer e linguaggio umano, consentendo alle macchine di elaborare e analizzare dati testuali o orali.
+<br>
+            Sin dagli anni '50, i ricercatori hanno cercato di imitare le capacità linguistiche umane. Tuttavia, è stato solo con l'emergere di tecniche come le reti neurali e l'apprendimento profondo nel 2000 che si sono verificati progressi significativi. Queste tecnologie consentono alle macchine di "capire" sfumature complesse del linguaggio, come il contesto, 
+            emozioni, ambiguità ed espressioni idiomatiche.
+<br>
+            Il TLN si divide in diverse attività, tra cui riconoscimento vocale, traduzione automatica, analisi dei sentimenti e generazione di testo. I sistemi di elaborazione del linguaggio naturale possono, ad esempio, tradurre un testo da una lingua all'altra o rispondere a domande in linguaggio naturale come farebbe un essere umano. App come Siri, Alexa e Google Assistant 
+            illustrano l'integrazione del TLN negli assistenti vocali, dove gli utenti possono dare comandi in linguaggio naturale e i sistemi reagiscono in modo appropriato.
+            IA e TLN sono utilizzati anche per analizzare grandi quantità di testo. Ad esempio, nell'analisi dei sentimenti, le aziende possono esaminare le recensioni dei clienti per estrarre informazioni sull'immagine del marchio. In ambito sanitario, l'IA e il TLN facilitano l'analisi delle cartelle cliniche per identificare le tendenze e migliorare la diagnosi.
+<br>
+            Questi progressi consentono di creare chatbot intelligenti, strumenti di scrittura automatica e sistemi di raccomandazione basati su preferenze espresse nel linguaggio naturale. Tuttavia, nonostante questi progressi, permangono delle sfide. La complessità del linguaggio umano, con le sue ambiguità e sottigliezze culturali, rimane un ostacolo importante alla perfezione di questi sistemi. Etica, Diritto e Sicurezza 
+            La riservatezza dei dati e le distorsioni negli algoritmi sono anche questioni cruciali nello sviluppo del TLN. Tuttavia, l'IA e il TLN continueranno a trasformare il modo in cui interagiamo con la tecnologia e apriranno nuove opportunità in svariati settori.
+        </p>
+		
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/fX1jw0fEs7M" title="Le NLP, qu&#39;est-ce que c&#39;est ? Data Insights#5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Applicazioni immersive</h2>
+        <p>
+            Applicazioni immersive, che sfruttano tecnologie come la realtà virtuale (VR), la realtà aumentata (AR) e la realtà mista (MR), mirano a offrire un'esperienza più coinvolgente immergendo l'utente in un ambiente interattivo o arricchendo il suo ambiente reale con elementi digitali. Queste applicazioni hanno conosciuto un notevole sviluppo nel XXI secolo, 
+            con i progressi nella potenza di calcolo, sensori di movimento e interfacce utente più intuitive.
+<br>
+            Le applicazioni immersive sono ampiamente utilizzate nel settore dell'intrattenimento, in particolare attraverso i videogiochi di realtà virtuale e i film interattivi. Queste esperienze consentono agli utenti di immergersi completamente in mondi digitali, dove possono interagire con gli elementi virtuali attraverso controller o dispositivi di monitoraggio e movimento degli occhi. 
+            Piattaforme come Oculus, PlayStation VR e HTC Vive hanno reso popolari queste applicazioni.
+            Nel settore dell'istruzione, le applicazioni immersive hanno il potenziale di trasformare l'apprendimento. Per esempio, gli studenti possono esplorare concetti scientifici in 3D o visitare siti storici attraverso simulazioni immersive. Queste esperienze pratiche offrono una comprensione più profonda e interattiva degli argomenti, rendendo l'apprendimento più coinvolgente e accessibile.
+<br>
+            In azienda, le applicazioni immersive sono utilizzate anche per la formazione professionale, soprattutto in settori ad alto rischio come la medicina, l'aviazione o la manutenzione industriale. Consentono di simulare in modo sicuro scenari complessi, offrendo così una formazione più efficace e meno costosa. Per esempio, i chirurghi possono praticare interventi 
+            complessi in un ambiente virtuale prima di realizzarli nella realtà.
+<br>
+            Nel settore dell'architettura e del design, la realtà virtuale consente ai clienti di visualizzare i progetti in 3D prima ancora che vengano costruiti. Queste applicazioni consentono un migliore processo decisionale e permettono di testare le modifiche in tempo reale.
+            Le applicazioni immersive non si limitano a VR e AR; la realtà mista, che combina entrambe le tecnologie, apre nuove possibilità per l'interazione tra il mondo reale e quello digitale. Ad esempio, strumenti come Microsoft HoloLens consentono di sovrapporre informazioni digitali su un ambiente fisico e di interagire direttamente con esso.
+<br>
+            Sebbene le applicazioni immersive siano promettenti, devono ancora affrontare sfide tecnologiche come la risoluzione del display, la latenza e la difficoltà di integrare senza problemi gli elementi digitali nel mondo reale. Tuttavia, con l'evoluzione delle tecnologie, queste applicazioni hanno il potenziale di trasformare molti settori, dal tempo libero a 
+            istruzione, attraverso la medicina e l'industria.
+        </p>
+		
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/peGgC7HzYf0" title="Les technologies immersives, qu&#39;est-ce que c&#39;est ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Scrittura predittiva</h2>
+        <p>
+            La scrittura predittiva è una tecnologia che anticipa e suggerisce le parole o frasi che l'utente potrebbe voler scrivere, facilitando così la redazione di testi. Utilizzato in smartphone, applicazioni di messaggistica, elaboratori di testi e sistemi di comunicazione assistita, si basa su algoritmi di intelligenza artificiale e elaborazione del linguaggio naturale per 
+            fornire suggerimenti contestuali adatti all'utente.
+<br>
+            La scrittura predittiva funziona analizzando le parole già digitate e utilizzando modelli statistici o di apprendimento automatico per prevedere il seguito del testo. Questi modelli si basano su database linguistici e, in molti casi, sulle abitudini personali dell'utente, apprese nel tempo. Ad esempio, se una persona inizia a digitare «io vado», l'applicazione 
+            potrebbe suggerire «al lavoro» o «a casa dei miei genitori», in base al contesto e alle precedenti abitudini dell'utente.
+<br>
+            La tecnologia di scrittura predittiva è stata resa popolare con l'avvento delle tastiere sugli smartphone, come le tastiere Android o iOS, e migliorata grazie all'integrazione dell'apprendimento automatico e delle reti neurali. In questo modo i suggerimenti diventano sempre più pertinenti e personalizzati, tenendo conto dello stile di scrittura e del contesto delle conversazioni precedenti. 
+            Questo riduce i tempi di digitazione e gli errori di battitura, rendendo la scrittura più veloce e fluida.
+<br>
+            La scrittura predittiva è utilizzata anche in applicazioni professionali, dove aiuta a scrivere e-mail o report suggerendo frasi o terminologie specifiche. Alcune applicazioni specializzate nella redazione automatica, come Grammarly o gli assistenti di codifica, vanno ancora oltre proponendo miglioramenti sul piano grammaticale, sintattico o stilistico.
+            Tuttavia, la scrittura predittiva non è priva di sfide. La dipendenza da questa tecnologia può ridurre le capacità di scrittura spontanea degli utenti e gli errori nei suggerimenti possono talvolta portare a malintesi o frustrazioni. Inoltre, la raccolta di dati personali utilizzati per l'utilizzo di tali sistemi solleva questioni relative alla riservatezza e alla sicurezza delle informazioni.
+            Nonostante queste sfide, la scrittura predittiva continua a evolversi e si rivela particolarmente utile in un mondo in cui la comunicazione rapida ed efficace è essenziale. Trasforma le abitudini di scrittura e interazione con le tecnologie digitali, semplificando e accelerando la produzione di testo.
+        </p>
+
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+	<a class="Bottom2v2" href="../Page-6/Page-6-fr.html">Precedente</a>
+	<a class="Bottom3" href="../index/index-fr.html">Accoglienza</a>
+    
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

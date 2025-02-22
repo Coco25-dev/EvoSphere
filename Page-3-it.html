@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - L'invenzione della stampa (XV secolo)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Italiano</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Ricerca...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Tema</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Lingue</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-3/Page-3-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-3/Page-3-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-3/Page-3-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-3/Page-3-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Registrarsi</b></button>
+            <button id="connectBtn"><b>Accedere</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Disconnettersi</b><div id="statusText"><b>Non connesso</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Registrarsi</b></button>
+            <button onclick="showLoginPopup()"><b>Accedere</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Lingue 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-3/Page-3-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-3/Page-3-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-3/Page-3-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-3/Page-3-es.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Ricerca <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Tema 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>L'invenzione della stampa (XV secolo)</h1>
+	<h2>Gutenberg (1450)</h2>
+		<p>
+			<b>Johannes Gutenberg</b>, inventore tedesco del XV secolo, è considerato il padre della stampa moderna grazie all'invenzione dei caratteri mobili metallici verso il 1450. Prima della sua innovazione, i libri venivano copiati a mano, un processo 
+            lunghi e costosi, o stampati con blocchi di legno incisi, limitando la produzione di testi. Gutenberg rivoluziona questa pratica progettando un sistema di stampa basato su caratteri metallici individuali, riutilizzabili e facilmente 
+            Possono essere uniti per formare pagine. Combina questa tecnica con una pressa adattata, ispirata ai torchi per vino, che consente una stampa rapida e precisa.
+<br>
+            L'opera emblematica di Gutenberg è la <b>Bibbia a 42 righe</b>, stampata nel 1455. Questo libro, notevole per la sua qualità e leggibilità, mostra il potenziale della stampa per produrre testi in grandi quantità. Grazie alla sua invenzione, diventa possibile 
+            diffondere conoscenze, testi religiosi e idee su una scala fino ad allora inimmaginabile. La riduzione dei costi di produzione rende i libri più accessibili, democratizzando l'istruzione e la cultura.
+<br>
+            L'impatto della stampa di Gutenberg è immenso. Essa contribuisce alla <b>Riforma protestante</b> permettendo la rapida diffusione degli scritti di Lutero, favorisce lo sviluppo delle scienze pubblicando opere scientifiche, e svolge un ruolo chiave nel <b>Rinascimento</b> diffondendo 
+            i testi classici dell'antichità. In un secolo, la stampa si estende in tutta l'Europa, portando una vera e propria rivoluzione intellettuale e culturale.
+<br>
+            Anche se Gutenberg ha avuto difficoltà finanziarie e non ha beneficiato pienamente dei benefici della sua invenzione, il suo contributo alla storia rimane inestimabile. Il suo sistema di stampa segna l'inizio dell'era moderna della comunicazione scritta, trasformando profondamente 
+            la società facilitando l'accesso alla conoscenza. Oggi, Gutenberg è riconosciuto come una delle figure più influenti della storia mondiale, la sua invenzione ha plasmato il mondo che conosciamo.
+		</p>
+ 
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/X1SsxDZx2UA" title="Au cœur de l&#39;Histoire :  Gutenberg et la révolution de l’imprimerie (Récit intégral)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Libri stampati</h2>
+		<p>
+			<b>Johannes Gutenberg</b>, inventore tedesco del XV secolo, è considerato il padre della stampa moderna grazie all'invenzione dei caratteri mobili metallici verso il 1450. Prima della sua innovazione, i libri venivano copiati a mano, un processo 
+            lunghi e costosi, o stampati con blocchi di legno incisi, limitando la produzione di testi. Gutenberg rivoluziona questa pratica progettando un sistema di stampa basato su caratteri metallici individuali, riutilizzabili e facilmente 
+            Possono essere uniti per formare pagine. Combina questa tecnica con una pressa adattata, ispirata ai torchi per vino, che consente una stampa rapida e precisa.
+<br>
+            L'opera emblematica di Gutenberg è la <b>Bibbia a 42 righe</b>, stampata nel 1455. Questo libro, notevole per la sua qualità e leggibilità, mostra il potenziale della stampa per produrre testi in grandi quantità. Grazie alla sua invenzione, diventa possibile 
+            diffondere conoscenze, testi religiosi e idee su una scala fino ad allora inimmaginabile. La riduzione dei costi di produzione rende i libri più accessibili, democratizzando l'Istruzione e la cultura.
+<br>
+            L'impatto della stampa di Gutenberg è immenso. Essa contribuisce alla <b>Riforma protestante</b> permettendo la rapida diffusione degli scritti di Lutero, favorisce lo sviluppo delle scienze pubblicando opere scientifiche, e svolge un ruolo chiave nel <b>Rinascimento</b> diffondendo 
+            i testi classici dell'antichità. In un secolo, la stampa si estende in tutta l'Europa, portando una vera e propria rivoluzione intellettuale e culturale.
+<br>
+            Anche se Gutenberg ha avuto difficoltà finanziarie e non ha beneficiato pienamente dei benefici della sua invenzione, il suo contributo alla storia rimane inestimabile. Il suo sistema di stampa segna l'inizio dell'era moderna della comunicazione scritta, trasformando profondamente 
+            la società facilitando l'accesso alla conoscenza. Oggi, Gutenberg è riconosciuto come una delle figure più influenti della storia mondiale, la sua invenzione ha plasmato il mondo che conosciamo.
+		</p>
+	
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/O2dK6SbK-oo" title="LE 1ER LIVRE IMPRIMÉ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Carta</h2>
+		<p>
+			La <b>carta</b>, apparsa per la prima volta in <b>Cina intorno al 200 a.C.</b> è un'invenzione rivoluzionaria che ha trasformato la trasmissione del sapere e la comunicazione. Creato da Cai Lun, un funzionario della corte imperiale, è fatto da fibre vegetali come il bambù, corteccia di gelso, 
+            la canapa o gli stracci, che vengono macinati, mescolati con acqua e poi essiccati in foglie sottili. Più leggera, meno costosa e più facile da produrre rispetto al papiro o alla pergamena, la carta diventa rapidamente un supporto ideale per la scrittura.
+<br>
+            Il suo uso si diffonde in tutta <b>l'Asia grazie alle rotte commerciali</b>. Nell'VIII secolo, la tecnica di fabbricazione della carta raggiunge il mondo arabo, dove viene migliorata, in particolare a Baghdad, che diventa un importante centro di produzione.<b> A partire dal XII secolo</b>, la carta è introdotta in Europa attraverso la Spagna 
+            musulmana. La sua produzione si intensifica grazie alla comparsa dei mulini a carta, che facilitano la trasformazione delle fibre vegetali.
+<br>
+            La carta ha svolto un ruolo chiave nella crescita della stampa nel XV secolo. Sostituisce gradualmente la pergamena, troppo costosa per una produzione di massa, e permette la fabbricazione rapida di libri stampati, rendendo il sapere più accessibile. Diventa anche indispensabile per i documenti amministrativi, le 
+            La corrispondenza e i giornali, contribuendo alla strutturazione delle società moderne.
+<br>
+            Grazie alla sua versatilità, la carta si adatta a molti usi: istruzione, arte, commercio e scienza. Nel corso dei secoli, si è evoluto in termini di qualità e produzione, soprattutto con l'uso della pasta da <b>carta ricavata dal legno nel XIX secolo</b>, che ha ulteriormente ridotto i costi e reso la carta onnipresente nella vita quotidiana. 
+            Oggi, nonostante la crescente digitalizzazione, la carta rimane un supporto essenziale per molte attività, tra cui stampa, imballaggio e arte. La sua lunga storia testimonia il suo ruolo centrale nello sviluppo delle civiltà e la sua influenza duratura sulla cultura umana.
+		</p>
+		
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/PwnZFlxkm18" title="Histoire de la fabrication du papier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <a class="Bottom1" href="../Page-4/Page-4-fr.html">Seguente</a>
+	<a class="Bottom2" href="../Page-2/Page-2-fr.html">Precedente</a>
+	<a class="Bottom3" href="../index/index-fr.html">Accoglienza</a>
+
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

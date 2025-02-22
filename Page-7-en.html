@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+	<link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - Modern technologies (2020 and beyond)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> English</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Rechercher...">
+            <button class="SearchBtn" onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Theme</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Langues</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-7/Page-7-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-7/Page-7-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-7/Page-7-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-7/Page-7-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Theme</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Languages</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-7/Page-7-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-7/Page-7-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-7/Page-7-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-7/Page-7-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Sign up</b></button>
+            <button id="connectBtn"><b>Logging</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Log out</b><div id="statusText"><b>Not logged</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Sign up</b></button>
+            <button onclick="showLoginPopup()"><b>Logging</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Languages 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="#" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="#" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Search <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Theme 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>Modern technologies (2020 and beyond)</h1>
+    <h2>Smart e-readers</h2>
+        <p>
+            The <b>smart readers</b> that emerged in the early 2000s represent a major evolution in the way people read digital books. These devices are dedicated to reading <b>e-books</b> and are equipped with <b>electronic ink (e-ink)</b> displays that reproduce the appearance of paper and provide a pleasant reading experience, without the glare or 
+            Visual fatigue often caused by <b>traditional screens</b>. Smart e-readers, such as the <b>Kindle</b> from Amazon, the <b>Kobo</b> from Rakuten or the <b>Nook</b> from Barnes & Noble are designed to be lightweight, portable and ergonomic, allowing users to read comfortably for hours.
+<br>
+            One of the main advantages of smart reading machines is their autonomy. Thanks to electronic ink, these devices consume very little energy, which allows them to run for several weeks with a single charge. In addition to their low power consumption, they have many features that enrich the reading experience. 
+            Readers allow you to customize the display by adjusting the size, font and brightness to suit each reader’s preferences.
+<br>
+            Modern e-readers are also connected to eBook distribution platforms, allowing users to purchase, download and store thousands of titles directly on the device. In addition, smart reading machines offer functions such as note-taking, bookmarking and text search, which allows 
+            deeper interaction with content. Some e-readers also have built-in lights, allowing you to read in dark environments, and others are water resistant, offering better durability.
+<br>
+            Smart reading machines have also made digital reading easier by reducing the cost of producing and distributing books. They have helped democratize access to a vast library of books, especially for avid readers or those who lack space to store physical books. Some e-readers include 
+            even subscription options for reading services, allowing access to a wide selection of books for a monthly subscription.
+            While smart e-readers have grown in importance, they still coexist with printed books. However, they represent a compromise between the convenience of digital reading and the feel of reading on paper, with undeniable benefits for frequent readers and those seeking practicality.
+        </p> 
+		
+    <iframe width="1000" height="630" src="https://www.youtube.com/embed/fX1jw0fEs7M" title="Le NLP, qu&#39;est-ce que c&#39;est ? Data Insights#5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>IA and Natural Language Processing</h2>
+        <p>
+            Artificial intelligence (AI) and natural language processing (NLP) form a powerful combination that enables machines to understand, interpret, and generate human language in a fluid and contextually relevant way. AI, as a field of computing, aims to create systems capable of performing tasks that would normally require intelligence 
+            human, such as voice recognition, decision making and text comprehension. TLN, a sub-discipline of AI, focuses specifically on the interaction between computers and human language, allowing machines to process and analyze text or oral data.
+<br>
+            Since the 1950s, researchers have sought to mimic human linguistic abilities. However, it was only with the emergence of techniques such as neural networks and deep learning in the 2000s that significant progress took place. These technologies allow machines to "understand" complex nuances of language, such as context, 
+            emotions, ambiguities and idioms.
+<br>
+            The TLN is divided into several tasks, including speech recognition, machine translation, sentiment analysis, and text generation. Natural language processing systems can, for example, translate text from one language to another or answer questions in natural language as a human would. Apps like Siri, Alexa, and Google Assistant 
+            illustrate the integration of TLN into voice assistants, where users can give commands in natural language and systems respond appropriately.
+            AI and TLN are also used to analyze large amounts of text. For example, in sentiment analysis, companies can look at customer reviews to extract brand image information. In health, AI and TLN facilitate the analysis of medical records to identify trends and improve diagnoses.
+<br>
+            These advances are creating intelligent chatbots, authoring tools, and recommendation systems based on natural language preferences. However, despite these advances, challenges remain. The complexity of human language, with its ambiguities and cultural subtleties, remains a major obstacle to the perfection of these systems. Ethics, 
+            Data privacy and bias in algorithms are also crucial issues in the development of TLN. Nevertheless, AI and TLN will continue to transform the way we interact with technology and open up new perspectives in a variety of areas.
+        </p>
+		
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/peGgC7HzYf0" title="Les technologies immersives, qu&#39;est-ce que c&#39;est ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Immersive applications</h2>
+        <p>
+            Immersive applications, which leverage technologies such as virtual reality (VR), augmented reality (AR) and mixed reality (MR), aim to provide a more engaging experience by immersing the user in an interactive environment or enriching his real-life environment with digital elements. These applications have grown considerably in the 21st century, 
+            with advances in computing power, motion sensors, and more intuitive user interfaces.
+<br>
+            Immersive applications are widely used in the entertainment field, especially through virtual reality video games and interactive films. These experiences allow users to fully immerse themselves in digital worlds, where they can interact with virtual elements through controllers or eye tracking and motion devices. 
+            Platforms like Oculus, PlayStation VR and HTC Vive have popularized these apps to the general public.
+            In the education sector, immersive applications have the potential to transform learning. For example, students can explore scientific concepts in 3D or visit historical sites through immersive simulations. These hands-on experiences provide a deeper and more interactive understanding of the subjects, making learning more engaging and accessible.
+<br>
+            In companies, immersive applications are also used for vocational training, especially in high-risk fields such as medicine, aviation or industrial maintenance. They allow for safe simulation of complex scenarios, thus providing more effective and less costly training. For example, surgeons can practice on procedures 
+            complex in a virtual environment before realising them in reality.
+<br>
+            In the architecture and design industry, virtual reality allows customers to visualize projects in 3D before they are built. These applications support better decision making and allow real-time testing of changes.
+            Immersive applications are not limited to VR and AR; mixed reality, which combines both technologies, opens up new possibilities for real-world interaction with digital. For example, tools like Microsoft HoloLens allow digital information to be overlaid on a physical environment while allowing direct interactions.
+<br>
+            While immersive applications are promising, they still face technological challenges such as display resolution, latency and the difficulty of integrating digital elements seamlessly into the real world. However, as technologies evolve, these applications have the potential to transform many sectors from leisure to 
+            education, including medicine and industry.
+        </p>
+
+    <h2>Predictive writing</h2>
+        <p>
+            Predictive writing is a technology that anticipates and suggests words or phrases that the user might want to write, making it easier to write. Used in smartphones, messaging applications, word processors and assisted communication systems, it relies on artificial intelligence and natural language processing algorithms to 
+            Provide contextual suggestions tailored to the user.
+<br>
+            Predictive writing works by analyzing words already typed and using statistical or machine learning models to predict the text’s progression. These models are based on linguistic databases and, in many cases, personal habits of the user learned over time. For example, if someone starts typing “I’m going”, the application 
+            may suggest “at work” or “at home” depending on the context and previous habits of the user.
+<br>
+            Predictive writing technology has been popularized with the advent of keyboards on smartphones, such as Android or iOS keyboards, and has improved through the integration of machine learning and neural networks. This makes the suggestions more relevant and personalized, taking into account the style of writing and context of previous conversations. 
+            This reduces typing time and errors, making writing faster and smoother.
+<br>
+            Predictive writing is also used in professional applications, where it helps to write emails or reports, by suggesting specific phrases or terminologies. Some applications specialized in automatic writing, such as Grammarly or the coding assistants, go even further by proposing improvements on a grammatical, syntactic or stylistic level.
+            However, predictive writing is not without challenges. Reliance on this technology can reduce users' ability to write spontaneously, and errors in suggestions can sometimes lead to misunderstandings or frustrations. In addition, the collection of personal data used to drive these systems raises issues of confidentiality and information security.
+            Despite these challenges, predictive writing continues to evolve and is proving particularly useful in a world where fast and effective communication is essential. It transforms the way people write and interact with digital technologies, simplifying and speeding up text production.
+        </p>
+
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+	<a class="Bottom2v2" href="../Page-6/Page-6-fr.html">Precedent</a>
+	<a class="Bottom3" href="../index/index-fr.html">Home</a>
+    
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

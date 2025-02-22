@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - Le Luci e l'industrializzazione (XVIII - XIX secolo)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Italiano</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Ricerca...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Tema</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Lingue</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-4/Page-4-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-4/Page-4-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-4/Page-4-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-4/Page-4-fr.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Registrarsi</b></button>
+            <button id="connectBtn"><b>Accedere</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Disconnettersi</b><div id="statusText"><b>Non connesso</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Registrarsi</b></button>
+            <button onclick="showLoginPopup()"><b>Accedere</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Lingue 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-4/Page-4-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-4/Page-4-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-4/Page-4-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-4/Page-4-fr.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Ricerca <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Tema 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>Le Luci e l'industrializzazione (XVIII - XIX secolo)</h1>
+	<h2>Rotativa (XIX secolo)</h2>
+		<p>
+			La <b>rotativa</b>, inventata nel XIX secolo, segna una tappa importante nella storia della <b>stampa</b> e della diffusione dell'informazione. Il suo principio si basa su cilindri rotanti che consentono di stampare rapidamente grandi quantità di testi e immagini su rotoli di carta. 
+            Questa invenzione, attribuita all'ingegnere tedesco Friedrich Koenig e perfezionata da Richard March Hoe negli Stati Uniti, sostituisce le presse al platino utilizzate dopo Gutenberg, che erano molto più lente.
+<br>
+            La <b>stampa a rotocalco</b> è cresciuta in un'epoca di esplosioni della domanda di stampa, con l'aumento della <b>stampa scritta</b>, il miglioramento dell'<b>alfabetizzazione</b> e l'espansione dei giornali. Grazie alla sua velocità di produzione, permette di stampare migliaia di copie in pochi ore, 
+            rendendo i <b>giornali</b> e libri accessibili a un pubblico molto più ampio. Inoltre, i costi di produzione diminuiscono, favorendo una diminuzione dei prezzi delle pubblicazioni.
+<br>
+            Miglioramenti apportati nel corso del XIX secolo, come l'uso di carta continua (anziché in fogli singoli) e la stampa simultanea su entrambi i lati, ne hanno ulteriormente ottimizzato l'efficienza. Questi progressi consentono la creazione di <b>giornali a grande tiratura</b>, come i quotidiani 
+            popolari, che diventano un vettore chiave dell'<b>informazione</b> e dell'<b>educazione</b> delle masse. 
+<br>
+            La stampa a rotocalco influenza anche altri settori, come l'<b>editoria</b> di libri, la <b>pubblicità</b> e le stampe industriali. Contribuisce alla <b>standardizzazione</b> delle pubblicazioni e allo sviluppo della <b>comunicazione visiva</b> attraverso la progressiva integrazione di illustrazioni e fotografie.
+            Questa tecnologia ha profondamente trasformato la <b>società</b> democratizzando l'accesso all'<b>informazione</b> e accelerando la diffusione delle idee. Rendendo possibile una stampa libera e accessibile, la <b>rotativa</b> ha svolto un ruolo centrale nell'emergere delle <b>democrazie moderne</b> e nell'<b>industrializzazione</b> della cultura.
+            Anche se oggi la sua storia si è evoluta con le tecniche digitali, il suo retaggio rimane al centro dei sistemi di stampa contemporanei.
+		</p>
+ 
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/3_yNXzOjgVc" title="imprimer en rotative - Imprimerie A. Geiger" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Macchina da scrivere</h2>
+		<p>
+			La <b>macchina da scrivere</b>, inventata nel XIX secolo, ha trasformato il mondo della scrittura e dell'amministrazione automatizzando la trascrizione manuale dei testi. Prima della sua invenzione, la scrittura era fatta esclusivamente a mano, il che era lungo e poco pratico, soprattutto per le attività ripetitive come la Scrivere lettere e documenti. 
+            Il primo modello commercialmente valido di macchina da scrivere fu progettato nel 1868 da Christopher Latham Sholes, un giornalista americano, in collaborazione con Samuel Soule e Carlos Glidden. Il brevetto di questa macchina è stato venduto alla società Remington, che ha lanciato la prima macchina da scrivere commerciale nel 1873.
+<br>
+            La macchina da scrivere utilizza una tastiera di tasti, ciascuno corrispondente a una lettera o un simbolo, che quando premuti battono un nastro di inchiostro per stampare caratteri su carta. Questa innovazione permette di digitare molto più velocemente che a mano e di produrre documenti più uniformi. Le macchine da scrivere meccaniche si sono rapidamente diffuse 
+            negli uffici, rivoluzionando l'amministrazione, il <b>giornalismo</b> e la corrispondenza personale.
+<br>
+            Le macchine da scrivere sono diventate strumenti indispensabili in molti settori nel corso del XX secolo, soprattutto nelle imprese, nelle agenzie di stampa e nelle amministrazioni pubbliche. La loro influenza si fa sentire anche nella vita domestica, in particolare grazie all'apparizione di macchine portatili e a prezzi conveniente a partire dagli anni 1920. Parallelamente, 
+            nascono modelli specializzati come la macchina da scrivere elettrica, che permetteva di digitare più velocemente e meno rumorosamente.
+<br>
+            L'invenzione della macchina da scrivere ha anche modificato il ruolo dei segretari e degli <b>dattilografi</b>, le cui competenze di dattilografia sono diventate essenziali. Tuttavia, a partire dagli anni '80, i <b>personal computer</b> cominciano a sostituire le macchine da scrivere, offrendo funzionalità aggiuntive come correzione automatica ed elaborazione digitale del testo.
+            Nonostante la sua graduale scomparsa, la macchina da scrivere ha lasciato un'impronta duratura nella cultura, simboleggiando un'epoca in cui velocità e produttività erano direttamente legate alla scrittura meccanica. Oggi, rimane un oggetto da collezione e un simbolo dell'evoluzione delle tecnologie della scrittura.
+		</p>
+	
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/dWATVeuG9vQ" title="Hermes Baby: Le premier laptop de l&#39;histoire | SWISS MADE 🇨🇭" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Educazione</h2>
+		<p>
+			L'<b>educazione</b>, nel suo senso più ampio, si riferisce a tutti i processi attraverso i quali un individuo impara e si sviluppa durante la sua vita. Non si tratta solo di acquisire conoscenze e competenze pratiche, ma anche di apprendere valori, norme sociali e comportamenti che consentono l'integrazione 
+			nella società. Storicamente, l'<b>educazione</b> si è evoluta in funzione delle strutture sociali, politiche ed economiche di ogni epoca.
+            Nelle società antiche, l'istruzione era spesso riservata alle élite e si faceva attraverso la trasmissione orale o attraverso manoscritti scritti a mano. L'insegnamento era incentrato sulle conoscenze religiose e filosofiche. Tuttavia, con l'invenzione della scrittura e poi della stampa, l'accesso alla conoscenza si democratizzò progressivamente, soprattutto a partire dal <b>Rinascimento</b>.
+<br>
+            La moderna educazione prende forma nel XIX secolo con l'istituzione dei <b>sistemi scolastici pubblici</b> in molti paesi. L'obiettivo è offrire un'istruzione di massa, che consenta a tutti i bambini di accedere alle conoscenze fondamentali. L'insegnamento diventa più strutturato, con programmi scolastici, discipline specializzate e un accento sulle scienze, le lingue e la matematica. 
+            In questo periodo, la scuola diventa uno strumento essenziale di formazione civica e di mobilità sociale.
+            Nel XX secolo, l'<b>istruzione</b> si diversifica con lo sviluppo di nuove discipline, l'internazionalizzazione degli scambi educativi e l'inclusione di tutti gli strati sociali. Le riforme dell'<b>istruzione</b> mirano anche ad adattare l'istruzione ai cambiamenti tecnologici, economici e culturali. L'<b>istruzione superiore</b> si sviluppa e le università diventano luoghi di ricerca e innovazione.
+<br>
+            Oggi l'<b>istruzione</b> continua a trasformarsi, con l'integrazione delle <b>tecnologie digitali</b>, l'attenzione all'apprendimento permanente e la parità di opportunità per accedere all'<b>istruzione</b> in molte parti del mondo. L'<b>istruzione</b> svolge un ruolo cruciale per lo sviluppo personale, la coesione sociale e il progresso economico, oltre a essere un pilastro della democrazia e della giustizia sociale. 
+            La sfida principale resta quella di rendere l'<b>istruzione</b> accessibile a tutti, indipendentemente dalla loro origine, status sociale o geografico.
+		</p>
+
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <a class="Bottom1" href="../Page-5/Page-5-fr.html">Seguente</a>
+	<a class="Bottom2" href="../Page-3/Page-3-fr.html">Precedente</a>
+	<a class="Bottom3" href="../index/index-fr.html">Accoglienza</a>
+
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

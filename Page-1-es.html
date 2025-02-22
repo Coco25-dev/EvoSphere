@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - La antigüedad y los orígenes de la escritura (aproximadamente 3000 a. C.)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Español</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Investigación...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Tema</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Lenguas</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-1/Page-1-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-1/Page-1-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-1/Page-1-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-1/Page-1-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Registrarse</b></button>
+            <button id="connectBtn"><b>Conectarse</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Desconectarse</b><div id="statusText"><b>No conectado</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Registrarse</b></button>
+            <button onclick="showLoginPopup()"><b>Conectarse</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Lenguas 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-1/Page-1-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-1/Page-1-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-1/Page-1-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-1/Page-1-es.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Investigación <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Tema 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>La antigüedad y los orígenes de la escritura (aproximadamente 3000 a. C.)</h1>
+	<h2>Escritura cuneiforme</h2>
+		<p>
+			La <b>escritura cuneiforme</b>, que apareció en <b>Mesopotamia</b> alrededor de <b>3300 a. C.</b>, se considera una de las primeras 
+			sistemas de <b>escritura</b> de la historia. Desarrollado por los <b>sumerios</b>, que inicialmente se utiliza para fines <b>administrativos</b> 
+			y <b>contables</b>, en particular para registrar los intercambios <b>comerciales</b> y gestionar las existencias de productos <b>agrícolas</b>. El término 
+			 "<b>cuneiforme</b>" proviene del latín <b>cuneus</b>, que significa "esquina", en referencia a la forma de los caracteres en clavos o esquinas, obtenidos 
+			Se prensaba una <b>cangreja</b> cortada en un tronco de caña sobre unas tablillas de <b>arcilla</b> húmeda. Una vez grabadas, estas tablillas se secaban 
+			al sol o cocidas para asegurar su <b>durabilidad</b>.
+<br>
+            Originalmente, la <b>escritura cuneiforme</b> era <b>pictográfica</b>: cada símbolo representaba un objeto o una idea. Por ejemplo, un dibujo de cabeza 
+            de bœuf significaba "buey". Con el tiempo, estos dibujos se simplificaron y estandarizaron, evolucionando hacia un sistema de signos <b>abstractos</b> y <b>fonéticos</b>. 
+            Esta evolución ha permitido transcribir no solo nombres propios e ideas complejas, sino también diversas lenguas como el <b>sumerio</b>, el <b>acadio</b>, 
+            el <b>babilonio</b> y el <b>asirio</b>, lo que ha favorecido su adopción en una vasta región del <b>Cercano Oriente</b>.
+<br>
+            Más allá de la simple gestión <b>económica</b>, la <b>escritura cuneiforme</b> se ha utilizado para textos <b>religiosos</b>, códigos de leyes (como el famoso <b>Código de Hammurabi</b>), 
+            Relatos <b>literarios</b> (como La <b>epopeya de Gilgamesh</b>) y documentos <b>históricos</b>. Permitió la creación de las primeras <b>bibliotecas</b>, como la de <b>Assurbanipal</b> 
+            en <b>Nínive</b>, donde se encontraron miles de tablillas.
+            Este sistema duró más de <b>3.000 años</b>, antes de desaparecer progresivamente con la llegada de <b>alfabetos</b> más simples como los <b>fenicios</b>.
+<br>
+            La <b>escritura cuneiforme</b> representa un punto de inflexión en la historia de la <b>humanidad</b>, marcando el paso de la <b>prehistoria</b> a la <b>historia</b> y abriendo el camino a la <b>conservación</b> 
+            y la transmisión duradera del <b>conocimiento</b> a través de los tiempos. Hoy en día, su descifrado en el <b>siglo XIX</b> ha permitido comprender mejor las <b>civilizaciones antiguas</b> y su contribución a nuestro <b>patrimonio cultural</b>.
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/8vW0lzGBArk" title="L&#39;invention de l&#39;écriture (Hiéroglyphe - Cunéiforme) - Le Voyage vers la Civilisation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	<h2>Papyrus</h2>
+		<p>
+			El <b>papiro</b> es uno de los primeros soportes de <b>escritura</b> conocidos, utilizado principalmente por las antiguas civilizaciones <b>egipcias</b> a partir del año <b>3000 a. C.</b>. Hecho de la planta 
+			del mismo nombre, que crecía en abundancia a lo largo del <b>Nilo</b>, representaba un avance mayor respecto a las tablillas de <b>arcilla</b> utilizadas en <b>Mesopotamia</b>. La fabricación del <b>papiro</b> consistía 
+			cortar los tallos de la planta en finas tiras, que se disponían en capas cruzadas, martilladas y luego pegadas entre sí con la savia natural. Después de secar, se obtenía una hoja 
+			Flexible, ligero y fácil de transportar.
+<br>
+            El <b>papiro</b> se utilizaba para escribir con pinceles o <b>calamas</b> empapados en tinta a base de hollín o <b>pigmentos</b> naturales. Se utilizó principalmente para registrar textos <b>religiosos</b>, <b>administrativos</b> 
+            literarias, pero también de cartas y contratos <b>jurídicos</b>. Las hojas de <b>papiro</b> se podían unir en rollos, lo que facilitaba la conservación y consulta de documentos. 
+            Estos rollos, llamados <b>volúmenes</b>, se almacenaban a menudo en <b>bibliotecas</b>, como la famosa <b>biblioteca de Alejandría</b>.
+<br>
+            El uso del <b>papiro</b> se extendió rápidamente por toda la cuenca <b>mediterránea</b> gracias al comercio <b>egipcio</b>. Sin embargo, su fragilidad ante la <b>humedad</b> y su coste relativamente elevado limitaban su uso a 
+            documentos importantes. A partir del <b>siglo III d.C.</b>, fue progresivamente sustituido por el <b>pergamino</b>, fabricado con pieles de animales, que era más duradero y se adaptaba mejor a los climas húmedos.
+<br>
+            No obstante, el <b>papiro</b> sigue siendo un símbolo de los comienzos de la <b>escritura</b> y de la transmisión del <b>saber</b>. Los fragmentos encontrados hoy, gracias a las condiciones áridas de <b>Egipto</b>, nos ofrecen testimonios preciosos 
+            sobre la <b>cultura</b>, la <b>religión</b> y la vida cotidiana de la <b>Antigüedad</b>. Constituye un hito esencial en la historia de los soportes de <b>escritura</b>, que vincula las primeras civilizaciones con los avances <b>tecnológicos</b> posteriores.
+		</p>
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/v0K3dnwAoKg" title="Papyrus (toi-même)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Lápiz y tabletas de cera</h2>
+		<p>
+			Las <b>plumas</b> y las <b>tabletas de cera</b> eran herramientas de <b>escritura</b> ampliamente utilizadas en la <b>antigüedad</b>, especialmente por los <b>griegos</b> y <b>romanos</b>. La <b>tabla de cera</b> consistía en un marco de madera lleno de una fina 
+			capa de <b>cera</b>, formando una superficie reutilizable para escribir. El <b>lápiz</b>, o <b>stylet</b>, era un instrumento afilado de <b>metal</b>, <b>hueso</b> o <b>madera</b>, utilizado para grabar letras o números en la <b>cera</b>. El otro extremo 
+			del <b>lápiz</b>, aplanado, permitía borrar las inscripciones alisando la <b>cera</b>, haciendo este soporte práctico para escritos temporales.
+<br>
+            Las <b>tabletas</b> se utilizaban para tareas muy variadas, desde tomar notas y escribir documentos <b>administrativos</b> hasta enseñar. Los alumnos, por ejemplo, los utilizaban para practicar la <b>escritura</b> y 
+            <b>matemáticas</b>. Las tablillas podían unirse entre sí para formar <b>dípticos</b> o <b>trípticos</b>, lo que aumentaba el espacio disponible para escribir, por lo que eran ideales para textos más largos, como contratos o cartas.
+<br>
+            La principal ventaja de las <b>tabletas de cera</b> era su <b>reutilización</b>, en contraste con los soportes más caros como el <b>papiro</b> o el <b>pergamino</b>. Eran particularmente apreciadas en entornos donde los escritos debían ser 
+            Modificados o corregidos con frecuencia. Sin embargo, su durabilidad era limitada: la <b>cera</b> podía derretirse bajo el efecto del calor o deteriorarse con el tiempo.
+<br>
+            Estos instrumentos se utilizaron ampliamente en todo el <b>Imperio Romano</b> y permanecieron en uso durante varios siglos, hasta la llegada del <b>papel</b>. Su simplicidad y su carácter económico los han convertido en soportes esenciales 
+            para la vida cotidiana, especialmente para las comunicaciones rápidas y los trabajos de aprendizaje. Las <b>plumas</b> y las <b>tablillas de cera</b> son hoy un testimonio fascinante de la creatividad de las <b>civilizaciones antiguas</b> para satisfacer sus necesidades prácticas en materia de <b>escritura</b>.
+		</p>
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/AeisV2eZXb4" title="HA#5 : Tablettes de cire, 33 siècles d&#39;écriture !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+		<button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+	<a class="Bottom1" href="../Page-2/Page-2-fr.html">Siguiente</a>
+	<a class="Bottom2" href="../index/index-fr.html">Acogida</a>
+    
+	<script src="../Main.js"></script>
+
+</body>
+</html>

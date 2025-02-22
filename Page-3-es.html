@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - La invención de la imprenta (siglo XV)</title>
+</head>
+    
+<body>
+
+	 <!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+     <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-es.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Español</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Investigación...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Tema</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Lenguas</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="#" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="#" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Registrarse</b></button>
+            <button id="connectBtn"><b>Conectarse</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Desconectarse</b><div id="statusText"><b>No conectado</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Registrarse</b></button>
+            <button onclick="showLoginPopup()"><b>Conectarse</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Lenguas 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="#" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="#" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Investigación <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Tema 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>La invención de la imprenta (siglo XV)</h1>
+	<h2>Gutenberg (1450)</h2>
+		<p>
+			El Salvador <b>Johannes Gutenberg</b>, inventor alemán del siglo XV, es considerado el padre de la imprenta moderna gracias a la invención de los <b>caracteres móviles metálicos</b> hacia 1450. Antes de su innovación, los libros se copiaban a mano, un proceso 
+			largo y costoso, o impreso con bloques de madera grabados, limitando la producción de textos. <b>Gutenberg</b> revoluciona esta práctica diseñando un sistema de impresión basado en caracteres metálicos individuales, reutilizables y fáciles 
+			Se pueden unir para formar páginas. Combina esta técnica con una prensa adaptada, inspirada en los prensas de vino, permitiendo una impresión rápida y precisa.
+<br>
+            La obra emblemática de <b>Gutenberg</b> es la <b>Biblia de 42 líneas</b>, impresa en 1455. Este libro, notable por su calidad y legibilidad, muestra el potencial de la imprenta para producir textos en grandes cantidades. Gracias a su invención, es posible 
+            difundir conocimientos, textos religiosos e ideas a una escala hasta entonces inimaginable. La reducción de los costos de producción hace que los libros sean más accesibles, democratizando la educación y la cultura.
+<br>
+            El impacto de la imprenta de <b>Gutenberg</b> es enorme. Contribuye a la <b>Reforma protestante</b> permitiendo la difusión rápida de los escritos de <b>Lutero</b>, favorece el desarrollo de las ciencias publicando obras científicas, y juega un papel clave en el <b>Renacimiento</b> difundiendo 
+            los textos clásicos de la Antigüedad. En un siglo, la imprenta se extiende por toda Europa, provocando una verdadera revolución intelectual y cultural.
+<br>
+            Aunque <b>Gutenberg</b> tuvo dificultades financieras y no se benefició plenamente de los beneficios de su invención, su contribución a la historia sigue siendo inestimable. Su sistema de impresión marca el comienzo de la era moderna de la <b>comunicación escrita</b>, transformando profundamente 
+            la sociedad facilitando el acceso al conocimiento. Hoy en día, <b>Gutenberg</b> es reconocido como una de las figuras más influyentes de la historia mundial, su invención ha dado forma al mundo tal y como lo conocemos.
+		</p>
+ 
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/X1SsxDZx2UA" title="Au cœur de l&#39;Histoire :  Gutenberg et la révolution de l’imprimerie (Récit intégral)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Libros impresos</h2>
+		<p>
+			Los <b>libros impresos</b>, que aparecieron a mediados del siglo XV gracias a la invención de la imprenta por <b>Johannes Gutenberg</b>, marcan un punto de inflexión en la historia de la transmisión del saber. Antes de esta revolución, los libros eran laboriosamente copiados a mano por monjes o 
+			de los escribas, haciendo su producción larga, costosa y reservada a una élite. La impresión, basada en <b>caracteres móviles metálicos</b> reutilizables, permite por primera vez una producción en masa de los textos, reduciendo considerablemente el coste y el tiempo necesarios para su fabricación.
+<br>
+            Los primeros libros impresos, llamados <b>incunables</b> (del latín <b>incunabula</b>, que significa "en la cuna"), incluyen principalmente textos religiosos, como la famosa <b>Biblia de 42 líneas de Gutenberg </b>, pero también obras literarias, científicas y jurídicas. Gracias a esta nueva tecnología, 
+            La difusión de las ideas experimenta una aceleración espectacular. Los libros impresos favorecen la aparición de la <b>Reforma protestante</b>, el auge de las ciencias y la renovación de los estudios clásicos, participando plenamente en movimientos como el <b>Renacimiento</b> y la <b>Ilustración</b>.
+<br>
+            El libro impreso también se distingue por su estandarización y mayor legibilidad. Se pueden añadir innovaciones como títulos, índices, paginación y tablas de contenido para facilitar el uso de las obras. En el espacio de unas décadas, las imprentas 
+            Aparecen en toda Europa, transformando las grandes ciudades en centros de producción cultural.
+<br>
+            Los libros impresos contribuyen a democratizar el acceso al conocimiento, llegando a un público cada vez más amplio. Con el aumento del número de escuelas y universidades, desempeñan un papel clave en la alfabetización y la formación intelectual de las poblaciones. Su impacto va mucho más allá de la educación: 
+            Dan forma a los debates sociales, religiosos y políticos y se convierten en herramientas esenciales para el progreso.
+            Incluso después de varios siglos, los libros impresos siguen siendo un pilar fundamental de la cultura. Su sostenibilidad, su capacidad para reunir y transmitir ideas y su papel en la construcción de sociedades modernas son testimonio de su importancia histórica y contemporánea.
+		</p>
+	
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/O2dK6SbK-oo" title="LE 1ER LIVRE IMPRIMÉ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Papel</h2>
+		<p>
+			El <b>papel</b>, que apareció por primera vez en China hacia el año 200 a. C., es una invención revolucionaria que ha transformado la transmisión del conocimiento y la comunicación. Creado por <b>Cai Lun</b>, un funcionario de la corte imperial, está hecho de fibras vegetales como el bambú, corteza de morera, 
+			cáñamo o trapos, que se trituran, se mezclan con agua y luego se secan en hojas finas. Más ligero, menos costoso y más fácil de producir que el papiro o el pergamino, el <b>papel</b> se convierte rápidamente en un soporte ideal para la escritura.
+<br>
+            Su uso se extiende por toda Asia gracias a las rutas comerciales. En el siglo VIII, la técnica de fabricación del <b>papel</b> llega al mundo árabe, donde se mejora, especialmente en <b>Bagdad</b>, que se convierte en un importante centro de producción. A partir del siglo XII, el <b>papel</b> se introduce en Europa vía España 
+            musulmana. Su producción se intensifica gracias a la aparición de las fábricas de <b>papel</b>, que facilitan el procesamiento de fibras vegetales.
+<br>
+            El <b>papel</b> desempeña un papel clave en el auge de la imprenta en el siglo XV. Sustituye gradualmente al pergamino, demasiado caro para una producción en masa, y permite la fabricación rápida de libros impresos, haciendo el conocimiento más accesible. También se convierte en indispensable para los documentos administrativos, las 
+            La correspondencia y los periódicos, que contribuyen a la estructuración de las sociedades modernas.
+<br>
+            Gracias a su versatilidad, el <b>papel</b> se adapta a muchos usos: educación, arte, comercio y ciencia. Con el paso de los siglos, evolucionó en términos de calidad y producción, especialmente con la utilización de pasta de <b>papel</b> a partir de madera en el siglo XIX, que reduce aún más los costes y hace que el <b>papel</b> sea omnipresente en la vida cotidiana. 
+            Hoy en día, a pesar de la creciente digitalización, el <b>papel</b> sigue siendo un soporte esencial para muchas actividades, como la impresión, el embalaje y el arte. Su larga historia es testimonio de su papel central en el desarrollo de las civilizaciones y de su influencia duradera sobre la cultura humana.
+		</p>
+		
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/PwnZFlxkm18" title="Histoire de la fabrication du papier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <a class="Bottom1" href="../Page-4/Page-4-fr.html">Siguiente</a>
+	<a class="Bottom2" href="../Page-2/Page-2-fr.html">Precedente</a>
+	<a class="Bottom3" href="../index/index-fr.html">Acogida</a>
+
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

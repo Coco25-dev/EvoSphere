@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - La Edad Media (del siglo V al XV)</title>
+</head>
+    
+<body>
+
+	 <!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+     <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-es.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Español</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Investigación...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Tema</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Lenguas</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="#" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="#" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Registrarse</b></button>
+            <button id="connectBtn"><b>Conectarse</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Desconectarse</b><div id="statusText"><b>No conectado</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Registrarse</b></button>
+            <button onclick="showLoginPopup()"><b>Conectarse</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Lenguas 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="#" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="#" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Investigación <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Tema 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>La Edad Media (del siglo V al XV)</h1>
+	<h2>Pergamino</h2>
+		<p>
+            El <b>pergamino</b>, un soporte de escritura hecho a partir de pieles de animales (especialmente ovejas, cabras o terneros), aparece en el siglo II a. C. en la ciudad de Pérgamo, en Anatolia, como respuesta a una escasez de <b>papiro</b>. 
+            Este material ofrece varias ventajas sobre el <b>papiro</b>: es más resistente, puede ser escrito en ambos lados y se conserva mejor en climas variados. La fabricación del <b>pergamino</b> requiere un proceso complejo: 
+            Las pieles se limpian, se sumergen en cal para eliminar el vello, se estiran sobre los marcos y luego se raspan y pulin para obtener una superficie lisa y adecuada para la escritura.
+<br>
+            El <b>pergamino</b> se convierte rápidamente en el soporte privilegiado para los manuscritos importantes, especialmente los textos religiosos, científicos y jurídicos. Se utiliza a menudo en forma de <b>códice</b>, un formato de libro encuadernado que sustituye 
+            Poco a poco el <b>rollo de papiro</b> gracias a su practicidad y facilidad de consulta. Los manuscritos medievales, a menudo ricamente decorados con iluminaciones y miniaturas, atestiguan la calidad excepcional del <b>pergamino</b> 
+            y su papel central en la transmisión del conocimiento.
+<br>
+            Aunque más caro y laborioso de producir que el <b>papiro</b>, el <b>pergamino</b> se impuso en Europa durante toda la Edad Media debido a su durabilidad. Es utilizado especialmente por los monjes copistas en los monasterios, donde producen 
+            Obras importantes como los <b>Evangelios</b> y las enciclopedias. Las bibliotecas medievales están constituidas principalmente por manuscritos en <b>pergamino</b>.
+<br>
+            La llegada del <b>papel</b>, importado de Asia a través de la España musulmana en el siglo XII, acabó por reducir el uso del <b>pergamino</b>. Sin embargo, sigue siendo utilizado para documentos prestigiosos u oficiales, como las cartas reales, hasta la época moderna. 
+            Hoy en día, los <b>pergaminos</b> antiguos son valiosos testimonios de la historia de la escritura y la artesanía, conservados en bibliotecas y museos de todo el mundo. Ilustran una etapa clave en la evolución de los medios de escritura, combinando 
+            sofisticación y sostenibilidad.
+		</p>
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/ybNib-hSrF0" title="Découverte : un parchemin du XVe siècle chiné dans une brocante" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Manuscritos</h2>
+		<p>
+			Los <b>manuscritos</b>, del latín manu scriptus (escrito a mano), designan textos escritos manualmente antes de la invención de la <b>imprenta</b> en el siglo XV. Se realizan principalmente en soportes como el <b>pergamino</b> o, más tarde, el <b>papel</b>. Los 
+            Los <b>manuscritos medievales</b>, producidos entre el siglo V y el siglo XV, constituyen una parte esencial de la transmisión de los conocimientos religiosos, científicos y literarios.
+<br>
+            En los monasterios, los monjes copistas trabajan en <b>scriptoriums</b>, donde recopila pacientemente textos con plumas de ganso empapadas en tinta. Estos libros suelen ir acompañados de <b>iluminaciones</b>, ilustraciones ricas en colores y 
+            en detalle, hecho a mano. Estas decoraciones no solo tienen por objeto embellecer los <b>manuscritos</b>, sino también subrayar pasajes importantes y guiar la lectura. Algunos <b>manuscritos</b>, como los <b>Evangelios</b> o los libros de horas, son verdaderas obras de arte, 
+            adornados con letras doradas iniciales y miniaturas que ilustran escenas bíblicas.
+<br>
+            Los <b>manuscritos</b> han desempeñado un papel fundamental en la conservación del conocimiento de la antigüedad. Se han copiado y traducido textos de filósofos griegos, romanos y árabes, a menudo en centros intelectuales como <b>Toledo</b>, <b>Bagdad</b> o <b>Constantinopla</b>. Estas obras tienen 
+            Alimentado el desarrollo de las universidades medievales y la aparición del Renacimiento.
+<br>
+            La producción de <b>manuscritos</b> se diversificó con la llegada del <b>papel</b>, menos costoso que el <b>pergamino</b>. Este cambio ha permitido una mayor difusión de los textos, en particular de las obras literarias, científicas y administrativas. Sin embargo, la realización de los <b>manuscritos</b> 
+            Seguía siendo un trabajo largo y costoso, reservado a las élites y a las instituciones religiosas.
+<br>
+            Con la invención de la <b>imprenta</b> por Gutenberg a mediados del siglo XV, los <b>manuscritos</b> comienzan a desaparecer, sustituidos por los libros impresos, más rápidos de producir y accesibles a un público más amplio. Sin embargo, los <b>manuscritos</b> siguen siendo invaluables testigos de 
+            La historia de la escritura, el arte y el pensamiento, ofreciendo una visión directa de las prácticas culturales e intelectuales de épocas pasadas.
+		</p>
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/eQpmZeOX6cs" title="Révélations sur les manuscrits de la mer Morte | Documentaire" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Códice</h2>
+		<p>
+			El <b>códice</b>, ancestro del libro moderno, es una forma de obra encuadernada que sustituye progresivamente a los <b>rollos de papiro</b> y <b>pergamino</b> desde el siglo I d.C. .-C. Este formato, adoptado primero por los romanos, se compone de hojas individuales, generalmente en <b>pergamino</b>, dobladas en cuadernos, 
+            Unidas entre sí y protegidas por una cubierta rígida. En comparación con los <b>rollos</b>, el <b>códice</b> tiene muchas ventajas: es más compacto, más fácil de manejar y permite una consulta rápida, ya que es posible pasar directamente a una página específica en lugar de desenrollar un <b>rollo</b> entero.
+<br>
+            El <b>códice</b> se impone poco a poco gracias a su durabilidad y a su practicidad, sobre todo para los textos religiosos. Los primeros <b>códices</b> son a menudo utilizados por los cristianos, que encuentran este formato particularmente adecuado para reunir los <b>Evangelios</b> y otros escritos bíblicos. Su adopción por la Iglesia contribuye a 
+            Popularización en occidente. Las bibliotecas comienzan a llenarse de <b>códices</b>, que permiten almacenar más textos en un espacio reducido.
+<br>
+            El <b>códice</b> también promueve el desarrollo de las técnicas de lectura y escritura. Facilita el uso de tablas de contenido, notas al pie y marcas de paginación, que no se pueden integrar en un <b>rollo</b>. Estas innovaciones hacen los textos más accesibles y estimulan 
+            El aprendizaje, especialmente en las escuelas y universidades de la Edad Media. 
+<br>
+            Con el paso de los siglos, los <b>códices</b> se convierten en verdaderas obras de arte. Suelen estar adornados con <b>iluminaciones</b>, letras de colores y encuadernaciones elaboradas. La transición al <b>papel</b> en el siglo XIV hizo que su producción fuera menos costosa, lo que contribuyó a su difusión entre un público más amplio. Sin embargo, la aparición 
+            de la <b>imprenta</b> en el siglo XV marca el comienzo del final del <b>códice</b> manuscrito, sustituido por el libro impreso.
+            El <b>códice</b> sigue siendo, sin embargo, un símbolo clave de la historia de la escritura, representando una etapa crucial en la evolución de los soportes de lectura. No solo revolucionó la forma de conservar y difundir el conocimiento, sino que también sentó las bases del libro tal como lo conocemos hoy.
+		</p>
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/m4Q7dEvcBQw" title="L&#39;art du livre au Moyen Âge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+		<button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <a class="Bottom1" href="../Page-3/Page-3-fr.html">Siguiente</a>
+	<a class="Bottom2" href="../Page-1/Page-1-fr.html">Precedente</a>
+	<a class="Bottom3" href="../index/index-fr.html">Acogida</a>
+
+	<script src="../Main.js"></script>
+
+</body>
+</html>

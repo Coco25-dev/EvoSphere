@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+	<link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - Tecnologías modernas (2020 y más allá)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Español</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Investigación...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Tema</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Lenguas</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-7/Page-7-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-7/Page-7-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-7/Page-7-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-7/Page-7-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Registrarse</b></button>
+            <button id="connectBtn"><b>Conectarse</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Desconectarse</b><div id="statusText"><b>No conectado</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Registrarse</b></button>
+            <button onclick="showLoginPopup()"><b>Conectarse</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Lenguas 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-7/Page-7-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-7/Page-7-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-7/Page-7-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-7/Page-7-es.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Investigación <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Tema 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>Tecnologías modernas (2020 y más allá)</h1>
+    <h2>Lectores inteligentes</h2>
+        <p>
+            Las <b>lectoras inteligentes</b> que surgieron a principios de la década del 2000 representan un cambio importante en la forma de leer los <b>libros digitales</b>. Estos dispositivos, dedicados a la lectura de <b>e-books</b>, están equipados con pantallas de <b>tinta electrónica (e-ink)</b> que reproducen el aspecto del papel y ofrecen una lectura agradable, sin el deslumbramiento o 
+            La fatiga visual a menudo causada por las <b>pantallas tradicionales</b>. Las lectores inteligentes, como el <b>Kindle</b> de Amazon, el <b>Kobo</b> de Rakuten o el <b>Nook</b> de Barnes & Noble, están diseñados para ser livianos, portátiles y ergonómicos, permitiendo a los usuarios leer cómodamente durante horas.
+<br>
+            Una de las principales ventajas de las lectoras inteligentes es su autonomía. Gracias a la tinta electrónica, estos dispositivos consumen muy poca energía, lo que les permite funcionar durante varias semanas con una sola carga. Además de su bajo consumo de energía, tienen muchas características que enriquecen la experiencia de lectura. 
+            Los lectores de libros electrónicos permiten personalizar la pantalla, ajustando el tamaño, la fuente y el brillo para que se ajusten a las preferencias de cada lector.
+<br>
+            Las modernas eReaders también están conectadas a plataformas de distribución de libros electrónicos, lo que permite a los usuarios comprar, descargar y almacenar miles de títulos directamente en el dispositivo. Además, las lectoras inteligentes ofrecen funciones como la toma de notas, marcadores y búsqueda en el texto, lo que permite 
+            Una interacción más profunda con el contenido. Algunas lectoras también están equipadas con iluminación integrada para leer en entornos oscuros, y otras son resistentes al agua, lo que les proporciona una mayor durabilidad.
+<br>
+            Las lectoras inteligentes también han facilitado el acceso a la lectura digital al reducir los costos de producción y distribución de libros. Han contribuido a democratizar el acceso a una amplia biblioteca de libros, especialmente para los lectores ávidos o aquellos que carecen de espacio para almacenar libros físicos. Algunas lectoras incluyen 
+            incluso opciones de suscripción a servicios de lectura, que permiten el acceso a una amplia selección de libros por un precio mensual.
+            Aunque las lectoras inteligentes han ganado en importancia, todavía coexisten con los libros impresos. Sin embargo, representan un compromiso entre la comodidad de la lectura digital y la sensación de leer en papel, con ventajas innegables para los lectores frecuentes y aquellos que buscan practicidad.
+        </p>
+    
+ 
+    <h2>Procesamiento de lenguaje natural y IA</h2>
+        <p>
+            La inteligencia artificial (IA) y el procesamiento del lenguaje natural (TLN) son una combinación poderosa que permite a las máquinas comprender, interpretar y generar lenguaje humano de manera fluida y contextualmente relevante. La IA, como campo de la informática, tiene por objeto crear sistemas capaces de realizar tareas que normalmente requieren inteligencia 
+            humanos, como el reconocimiento de voz, la toma de decisiones y la comprensión de textos. El TLN, una subdisciplina de la IA, se centra específicamente en la interacción entre los ordenadores y el lenguaje humano, permitiendo a las máquinas procesar y analizar datos textuales o orales.
+<br>
+            Desde los años 50, los investigadores han buscado imitar las capacidades lingüísticas humanas. Sin embargo, fue solo con la aparición de técnicas como las redes neuronales y el aprendizaje profundo en los años 2000 que se produjeron avances significativos. Estas tecnologías permiten a las máquinas "entender" matices complejos del lenguaje, como el contexto, 
+            Las emociones, las ambigüedades y las expresiones idiomáticas.
+<br>
+            El TLN se divide en varias tareas, incluyendo reconocimiento de voz, traducción automática, análisis de sentimientos y generación de texto. Los sistemas de procesamiento del lenguaje natural pueden, por ejemplo, traducir un texto de un idioma a otro o responder preguntas en lenguaje natural como lo haría un ser humano. Aplicaciones como Siri, Alexa y el Asistente de Google 
+            Ilustran la integración del TLN en los asistentes de voz, donde los usuarios pueden dar comandos en lenguaje natural y los sistemas responden adecuadamente.
+            La IA y el TLN también se utilizan para analizar grandes cantidades de texto. Por ejemplo, en el análisis de sentimientos, las empresas pueden examinar las opiniones de los clientes para extraer información sobre la imagen de su marca. En el ámbito de la salud, la IA y el TLN facilitan el análisis de los historiales médicos para identificar tendencias y mejorar los diagnósticos.
+<br>
+            Estos avances permiten crear chatbots inteligentes, herramientas de redacción automática y sistemas de recomendación basados en preferencias expresadas en lenguaje natural. Sin embargo, a pesar de estos avances, aún quedan desafíos. La complejidad del lenguaje humano, con sus ambigüedades y sutilezas culturales, sigue siendo un obstáculo importante para la perfección de estos sistemas. La ética, 
+            La confidencialidad de los datos y los sesgos en los algoritmos también son cuestiones cruciales en el desarrollo del TLN. Sin embargo, la IA y el TLN seguirán transformando la forma en que interactuamos con la tecnología y abriendo nuevas perspectivas en una variedad de áreas.
+        </p>
+		
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/fX1jw0fEs7M" title="Le NLP, qu&#39;est-ce que c&#39;est ? Data Insights#5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Aplicaciones inmersivas</h2>
+        <p>
+            Aplicaciones inmersivas, que utilizan tecnologías como la realidad virtual (RV), la realidad aumentada (RA) y la realidad mixta (RM), tienen como objetivo ofrecer una experiencia más atractiva al sumergir al usuario en un entorno interactivo o enriquecer su entorno real con elementos digitales. Estas aplicaciones han experimentado un considerable auge en el siglo XXI, 
+            con los avances en potencia de cálculo, sensores de movimiento e interfaces de usuario más intuitivas.
+<br>
+            Las aplicaciones inmersivas se utilizan ampliamente en el ámbito del entretenimiento, especialmente a través de los videojuegos de realidad virtual y las películas interactivas. Estas experiencias permiten a los usuarios sumergirse completamente en mundos digitales, donde pueden interactuar con elementos virtuales a través de controladores o dispositivos de seguimiento ocular y de movimiento. 
+            Plataformas como Oculus, PlayStation VR y HTC Vive han popularizado estas aplicaciones entre el público en general.
+            En el sector educativo, las aplicaciones inmersivas tienen el potencial de transformar el aprendizaje. Por ejemplo, los estudiantes pueden explorar conceptos científicos en 3D o visitar sitios históricos a través de simulaciones inmersivas. Estas experiencias prácticas ofrecen una comprensión más profunda e interactiva de los temas, haciendo que el aprendizaje sea más atractivo y accesible.
+<br>
+            En las empresas, las aplicaciones inmersivas también se utilizan para la formación profesional, especialmente en campos de alto riesgo como la medicina, la aviación o el mantenimiento industrial. Permiten simular escenarios complejos de manera segura, lo que permite una capacitación más eficaz y menos costosa. Por ejemplo, los cirujanos pueden practicar intervenciones 
+            En un entorno virtual, antes de realizarlos en la realidad.
+<br>
+            En el sector de la arquitectura y el diseño, la realidad virtual permite a los clientes visualizar proyectos en 3D incluso antes de su construcción. Estas aplicaciones permiten una mejor toma de decisiones y permiten probar cambios en tiempo real.
+            Las aplicaciones inmersivas no se limitan a la realidad virtual y la realidad aumentada; la realidad mixta, que combina ambas tecnologías, abre nuevas posibilidades para la interacción entre el mundo real y el digital. Por ejemplo, herramientas como Microsoft HoloLens permiten la superposición de información digital en un entorno físico y al mismo tiempo permiten interacciones directas.
+<br>
+            Aunque las aplicaciones inmersivas son prometedoras, todavía se enfrentan a desafíos tecnológicos como la resolución de pantalla, la latencia y la dificultad para integrar elementos digitales sin problemas en el mundo real. Sin embargo, a medida que las tecnologías evolucionan, estas aplicaciones tienen el potencial de transformar muchos sectores, desde el ocio hasta la 
+            educación, pasando por la medicina y la industria.
+        </p>
+		
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/peGgC7HzYf0" title="Les technologies immersives, qu&#39;est-ce que c&#39;est ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Escritura predictiva</h2>
+        <p>
+            La escritura predictiva es una tecnología que anticipa y sugiere las palabras o frases que el usuario podría querer escribir, facilitando así la redacción de textos. Utilizado en teléfonos inteligentes, aplicaciones de mensajería, procesadores de texto y sistemas de comunicación asistida, se basa en algoritmos de inteligencia artificial y procesamiento del lenguaje natural para 
+            Ofrecer sugerencias contextuales adaptadas al usuario.
+<br>
+            La escritura predictiva funciona analizando las palabras ya escritas y utilizando modelos estadísticos o de aprendizaje automático para predecir el texto que se seguirá. Estos modelos se basan en bases de datos lingüísticas y, en muchos casos, en los hábitos personales del usuario, aprendidos a lo largo del tiempo. Por ejemplo, si una persona comienza a escribir «voy», la aplicación 
+            podría sugerir «en el trabajo» o «en casa de mis padres», dependiendo del contexto y los hábitos previos del usuario.
+<br>
+            La tecnología de escritura predictiva se popularizó con el uso de teclados en teléfonos inteligentes, como los teclados de Android o iOS, y mejoró gracias a la integración del aprendizaje automático y las redes neuronales. Las sugerencias se vuelven cada vez más relevantes y personalizadas, teniendo en cuenta el estilo de escritura y el contexto de las conversaciones anteriores. 
+            Esto reduce el tiempo de entrada y los errores tipográficos, haciendo que la escritura sea más rápida y fluida.
+<br>
+            La escritura predictiva también se utiliza en aplicaciones profesionales, donde ayuda a escribir correos electrónicos o informes, sugiriendo frases o terminologías específicas. Algunas aplicaciones especializadas en la redacción automática, como Grammarly o los asistentes de codificación, van aún más lejos al proponer mejoras en el plano gramatical, sintáctico o estilístico.
+            Sin embargo, la escritura predictiva no está exenta de desafíos. La dependencia de esta tecnología puede reducir las capacidades de escritura espontánea de los usuarios, y los errores en las sugerencias pueden a veces dar lugar a malentendidos o frustraciones. Además, la recopilación de datos personales utilizados para entrenar estos sistemas plantea cuestiones de confidencialidad y seguridad de la información.
+            A pesar de estos desafíos, la escritura predictiva continúa evolucionando y resulta especialmente útil en un mundo donde la comunicación rápida y eficaz es esencial. Transforma los hábitos de escritura e interacción con las tecnologías digitales, simplificando y acelerando la producción de texto.
+        </p>
+
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+	<a class="Bottom2v2" href="../Page-6/Page-6-fr.html">Precedente</a>
+	<a class="Bottom3" href="../index/index-fr.html">Acogida</a>
+    
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

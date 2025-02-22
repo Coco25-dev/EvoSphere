@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - L'era elettronica e digitale (XX secolo)</title>
+</head>
+    
+<body>
+<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Italiano</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Ricerca...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Tema</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Lingue</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-5/Page-5-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-5/Page-5-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-5/Page-5-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-5/Page-5-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Registrarsi</b></button>
+            <button id="connectBtn"><b>Accedere</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Disconnettersi</b><div id="statusText"><b>Non connesso</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Registrarsi</b></button>
+            <button onclick="showLoginPopup()"><b>Accedere</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Lingue 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-5/Page-5-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-5/Page-5-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-5/Page-5-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-5/Page-5-es.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Ricerca <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Tema 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>L'era elettronica e digitale (XX secolo)</h1>
+    <h2>Computer (anni 1940-1970)</h2>
+        <p>
+            I <b>computer</b>, sviluppati tra gli anni <b>1940</b> e <b>1970</b>, hanno segnato l'inizio di una <b>grande rivoluzione tecnologica</b>, trasformando profondamente la <b>società</b> e le modalità di <b>lavoro</b>. Queste macchine, inizialmente progettate per eseguire <b>calcoli complessi</b>, si sono evolute rapidamente per diventare degli strumenti
+            versatili utilizzati in vari settori, dalla <b>ricerca scientifica</b> alla <b>amministrazione</b>.
+<br>
+            Il primo computer elettronico, ENIAC (Electronic Numerical Integrator and Computer), è costruito nel 1945 negli Stati Uniti. Questo apparecchio massiccio, occupa un'intera stanza, utilizza tubi a vuoto per effettuare calcoli e può realizzare in pochi secondi operazioni che richiedevano ore agli umani. 
+            Tuttavia, questi primi computer rimangono costosi, ingombranti e accessibili solo alle grandi istituzioni.
+            Il primo <b>computer elettronico</b>, <b>ENIAC</b> (<b>Electronic Numerical Integrator and Computer</b>), è costruito in <b>1945</b> negli <b>Stati Uniti</b>. Questo apparecchio massiccio, che occupa un'intera stanza, utilizza <b>tubi a vuoto</b> per eseguire calcoli e può realizzare in pochi secondi operazioni che richiedevano ore agli esseri umani. 
+            Tuttavia, questi primi computer rimangono costosi, ingombranti e accessibili solo alle grandi <b>istituzioni</b>.
+<br>
+            Negli anni <b>1950</b>, l'arrivo dei <b>transistor</b> sostituisce i tubi a vuoto, rendendo i computer più affidabili, meno dispendiosi in termini di energia e più compatti. Macchine come l'<b>IBM 701</b> segnano l'inizio dell'informatizzazione delle <b>imprese</b>, in particolare per l'elaborazione dei dati <b>finanziari</b> e le attività <b>amministrative</b>. 
+            Questo periodo vede anche l'emergere dei primi <b>linguaggi di programmazione</b> come <b>Fortran</b> e <b>COBOL</b>, che semplificano l'interazione con i computer.
+<br>
+            Gli anni '60 segnano una nuova tappa con l'introduzione dei circuiti integrati, che miniaturizzano ulteriormente i componenti e aumentano la potenza di calcolo. Ciò ha portato alla creazione di macchine più accessibili, come il PDP-8 della Digital Equipment Corporation, spesso considerato il primo mini-computer. 
+            Parallelamente, l'informatica si sta democratizzando in settori come l'istruzione e la ricerca.
+<br>
+            Negli anni '70, la comparsa dei microprocessori rivoluzionò l'informatica rendendo possibile la fabbricazione di personal computer. Macchine come l'Altair 8800 aprono la strada a un computer accessibile ai privati. Questo è anche il periodo in cui i sistemi operativi, come Unix, iniziano a 
+            standardizzare l'uso dei computer.
+            Tra il <b>1940</b> e il <b>1970</b>, i <b>computer</b> passano quindi da strumenti giganteschi destinati alle élite <b>scientifiche</b> e <b>industriali</b> a macchine più piccole, più potenti e adatte ad un uso diversificato. Questo periodo pone le basi della <b>informatica moderna</b> e della <b>rivoluzione digitale</b> che seguirà. </p>
+        </p>
+
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/9JxHU7fv7Yc" title="L&#39;Histoire Fascinante de l&#39;Ordinateur : Des Origines aux Machines Modernes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+    <h2>Elaborazione testi</h2>
+        <p>
+            La <b>elaborazione di testi</b> è una tecnologia che ha trasformato il modo in cui si scrivono, modificano e producono documenti scritti, sostituendo progressivamente le <b>macchine da scrivere</b> tradizionali. Introdotto negli anni <b>1960</b>, combina le capacità dei <b>computer</b> con i <b>software</b> appositamente progettati per la scrittura. 
+            I primi sistemi di elaborazione testi, come il <b>MT/ST</b> (<b>Magnetic Tape/Selectric Typewriter</b>) di <b>IBM</b>, utilizzavano una macchina da scrivere elettrica accoppiata a nastri magnetici per registrare e riutilizzare il testo
+<br>
+            Con l'avvento dei <b>personal computer</b> negli anni <b>1980</b>, il trattamento testi diventa più accessibile e interattivo. Il <b>software</b> come <b>WordStar</b>, lanciato nel <b>1979</b>, o <b>Microsoft Word</b>, introdotto nel <b>1983</b>, offrono funzionalità avanzate rispetto alla scrittura manuale o meccanica. Questi programmi non solo consentono 
+            Scrivere, ma anche modificare facilmente il testo, inserire immagini, cambiare i <b>caratteri</b> e applicare un layout complesso.
+<br>
+            Il vantaggio principale dell'elaborazione testi è la sua <b>flessibilità</b> e la sua <b>semplicità di utilizzo</b>. Elimina la necessità di ricominciare un intero documento in caso di errore, grazie alle funzioni di cancellazione e correzione rapida. Gli utenti possono salvare i loro file, stamparli o condividerli digitalmente, rivoluzionando così i processi 
+            di lavoro nei <b>uffici</b>, nelle <b>scuole</b> e nelle <b>case</b>.
+<br>
+            Nel corso del tempo, l'elaborazione dei testi si è evoluta per includere strumenti aggiuntivi come il <b>controllo ortografico</b> e la <b>grammatica</b>, il <b>riconoscimento vocale</b> e persino suggerimenti di miglioramento stilistico. Queste innovazioni hanno notevolmente aumentato la <b>produttività</b> e la <b>qualità</b> dei documenti prodotti. Con l'avvento del 
+            <b>cloud computing</b>, applicazioni come <b>Google Docs</b> consentono oggi una <b>collaborazione in tempo reale</b> tra più utenti, segnando una nuova tappa nella storia dell'elaborazione di testo.L'elaborazione di testi è diventata uno strumento indispensabile in tutti i campi. Non solo ha semplificato la creazione di documenti, ma ha anche aperto la strada a una gestione 
+            più efficiente dell'informazione scritta, affermandosi come tecnologia chiave della <b>rivoluzione digitale</b>. 
+        </p>
+
+    <h2>E-book (e-books)</h2>
+        <p>
+            Gli <b>e-book</b> o <b>e-books</b> rappresentano una rivoluzione nel mondo della <b>lettura</b> e dell'<b>editoria</b>. Nata negli anni <b>1970</b> con il <b>Project Gutenberg</b>, un'iniziativa per digitalizzare opere letterarie senza diritti d'autore, questa tecnologia permette di leggere libri in formato digitale su vari dispositivi, come i <b>computer</b>, le <b>tavolette</b>, 
+            <b>smartphone</b> e <b>e-reader</b>.
+<br>
+            Un <b>e-book</b> è un file digitale contenente testo e talvolta immagini, accessibile tramite formati specifici come <b>EPUB</b>, <b>PDF</b> o <b>MOBI</b>. La sua caratteristica principale è la <b>portabilità</b>: un unico lettore può contenere migliaia di libri, il che lo rende ideale per i <b>lettori avidi</b> o per chi viaggia spesso. L'introduzione dei primi lettori commerciali, come il <b>Kindle</b> 
+            di <b>Amazon</b> nel <b>2007</b>, ha democratizzato i <b>e-book</b>, che offrono un accesso immediato a immense biblioteche digitali attraverso <b>piattaforme online</b>.
+<br>
+            Ci sono diversi vantaggi nell'utilizzare <b>e-book</b>. Consentono di regolare la dimensione e lo stile del <b>carattere</b> e forniscono una <b>lettura</b> su misura per le vostre esigenze, soprattutto per le persone con problemi di vista</b>. Inoltre, funzioni come <b>annotazioni</b>, <b>segnalibri</b>, <b>ricerca rapida</b> e <b>traduzione integrata</b> migliorano l'esperienza di lettura. Sono anche <b>ecologici</b>, 
+            riducendo il consumo di <b>carta</b> e i costi associati alla produzione e al trasporto di <b>libri fisici</b>.
+            Tuttavia, anche i <b>e-book</b> pongono sfide. Le questioni dei <b>diritti digitali</b> (<b>DRM</b>) e della <b>proprietà</b> sono controverse, poiché gli acquirenti di e-book spesso hanno solo una <b>licenza di utilizzo</b>. Alcuni lettori lamentano anche la perdita di esperienza tattile e sensoriale dei <b>libri cartacei</b>.
+<br>
+            Nonostante queste limitazioni, i <b>e-book</b> sono diventati un complemento essenziale ai formati tradizionali. Forniscono <b>maggiore accessibilità</b> alla <b>lettura</b>, specialmente in aree dove i libri fisici sono scarsi o costosi. Nell'ambiente didattico, consentono di raggruppare <b>manuali</b> e <b>risorse interattive</b> in un unico dispositivo, trasformando l'apprendimento. Combinando <b>praticità</b>, 
+            <b>innovazione</b> e <b>ecologia</b>, i <b>e-book</b> hanno ridefinito il nostro rapporto con la <b>lettura</b> mentre coesistono con i <b>libri cartacei</b> che restano radicati nelle tradizioni culturali e sentimentali dei <b>lettori</b>.
+        </p>
+		
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/X79Ia9kbLRo" title="Livre électronique : une bibliothèque dans la poche" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Internet (1990)</h2>
+        <p>
+            <b>Internet</b>, lanciato commercialmente negli anni <b>1990</b>, ha trasformato il mondo in una rete interconnessa, rivoluzionando la <b>comunicazione</b>, il <b>commercio</b> e l'accesso all'<b>informazione</b>. Le sue origini risalgono agli anni <b>1960</b> con il progetto <b>ARPANET</b> del dipartimento della difesa degli Stati Uniti, progettato per condividere dati tra <b>computer</b>. Tuttavia, è nel 1990</b> che il ricercatore britannico <b>Tim Berners-Lee</b> 
+            inventa il <b>World Wide Web</b>, un'interfaccia facile da usare che permette di navigare facilmente in <b>Internet</b> tramite pagine <b>ipertestuali</b>.
+<br>
+            L'arrivo di <b>Internet</b> a grande pubblico coincide con importanti progressi come la creazione dei <b>browser web</b>, come <b>Mosaic</b> in <b>1993</b> e <b>Netscape</b> in <b>1994</b>, che semplificano l'accesso alla rete. Questo periodo segna anche l'emergere di <b>fornitori di servizi Internet</b>, che consentono a milioni di famiglie di connettersi dai propri <b>computer personali</b>. Da qui, <b>Internet</b> diventa una piattaforma globale per scambiare
+            <b>e-mail</b>, cercare <b>informazioni</b> e interagire tramite <b>forum</b> o <b>siti web</b>.
+<br>
+            Uno dei punti di forza di <b>Internet</b> è il suo ruolo nella <b>democratizzazione dell'informazione</b>. Gli utenti possono accedere istantaneamente a contenuti <b>educativi</b>, <b>culturali</b> e <b>scientifici</b>, trasformando il modo in cui la <b>conoscenza</b> viene prodotta e condivisa. Il <b>e-commerce</b>, con pionieri come <b>Amazon</b> e <b>eBay</b>, si sviluppa rapidamente, cambiando le abitudini di consumo. <b>Internet</b> ha anche ridefinito la <b>comunicazione sociale</b>. L'emergere di <b>messaggistica istantanea</b> e, più tardi, dei 
+            <b>social media</b> negli anni <b>2000</b>, ha avvicinato gli individui nonostante le distanze, creando al contempo nuove sfide in materia di <b>riservatezza</b> e di <b>cibersicurezza</b>.
+<br>
+            Nonostante il suo enorme potenziale, <b>Internet</b> pone anche sfide come le disuguaglianze di accesso, la diffusione di <b>false informazioni</b> e la <b>dipendenza digitale</b>. Queste problematiche continuano a alimentare i dibattiti sull'uso <b>etico</b> e responsabile della rete. Dal 1990 <b>Internet</b> è diventato un pilastro imprescindibile della vita quotidiana e professionale. Ha ridefinito le <b>relazioni umane</b>, accelerato l'innovazione</b> e gettato le basi di un mondo interconnesso in cui i confini geografici 
+            si cancellano a vantaggio di una <b>economia</b> e di una <b>cultura globalizzate</b>.
+        </p>
+
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/5ee6W1ODvFU" title="Découvrons l&#39;histoire d&#39;internet" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <a class="Bottom1" href="../Page-6/Page-6-fr.html">Seguente</a>
+	<a class="Bottom2" href="../Page-4/Page-4-fr.html">Precedente</a>
+	<a class="Bottom3" href="../index/index-fr.html">Accoglienza</a>
+    
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

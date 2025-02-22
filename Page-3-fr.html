@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - L’Invention de l’imprimerie (XVe siècle)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">Français</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Rechercher...">
+            <button class="SearchBtn" onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Theme</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Langues</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-3/Page-3-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-3/Page-3-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-3/Page-3-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-3/Page-3-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>S'inscrire</b></button>
+            <button id="connectBtn"><b>Se connecter</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Se déconnecter</b><div id="statusText"><b>Non connecté</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>S'inscrire</b></button>
+            <button onclick="showLoginPopup()"><b>Se connecter</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav" id="myBlock" class="block">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Langues 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-3/Page-3-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-3/Page-3-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-3/Page-3-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-3/Page-3-es.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Recherche <button class="SearchBtn" onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Theme 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>L’Invention de l’imprimerie (XVe siècle)</h1>
+	<h2>Gutenberg (1450)</h2>
+		<p>
+			<b>Johannes Gutenberg</b>, inventeur allemand du <b>XVe siècle</b>, est considéré comme le père de l’<b>imprimerie moderne</b> grâce à l’invention des <b>caractères mobiles métalliques</b> vers <b>1450</b>. Avant son innovation, les livres étaient copiés à la main, un processus 
+            long et coûteux, ou imprimés à l’aide de <b>blocs de bois gravés</b>, limitant la production de textes. <b>Gutenberg</b> révolutionne cette pratique en concevant un système d’<b>imprimerie</b> basé sur des caractères métalliques individuels, réutilisables et facilement 
+            assemblables pour former des pages. Il combine cette technique avec une <b>presse adaptée</b>, inspirée des <b>pressoirs à vin</b>, permettant une impression rapide et précise.
+<br>
+            L’œuvre emblématique de <b>Gutenberg</b> est la <b>Bible à 42 lignes</b>, imprimée en <b>1455</b>. Ce livre, remarquable par sa qualité et sa lisibilité, montre le potentiel de l’<b>imprimerie</b> pour produire des textes en grande quantité. Grâce à son invention, il devient possible 
+            de diffuser les connaissances, les textes <b>religieux</b>, et les idées à une échelle jusqu’alors inimaginable. La baisse des coûts de production rend les livres plus accessibles, démocratisant l’<b>éducation</b> et la <b>culture</b>.
+<br>
+            L’impact de l’<b>imprimerie de Gutenberg</b> est immense. Elle contribue à la <b>Réforme protestante</b> en permettant la diffusion rapide des écrits de <b>Luther</b>, favorise l’essor des <b>sciences</b> en publiant des travaux savants, et joue un rôle clé dans la <b>Renaissance</b> en diffusant 
+            les textes classiques de l’<b>Antiquité</b>. En un siècle, l’<b>imprimerie</b> s’étend dans toute l’Europe, entraînant une véritable révolution intellectuelle et culturelle.
+<br>
+            Bien que <b>Gutenberg</b> ait connu des difficultés financières et n’ait pas profité pleinement des retombées de son invention, son apport à l’histoire reste inestimable. Son système d’<b>impression</b> marque le début de l’ère moderne de la <b>communication écrite</b>, transformant profondément 
+            la société en facilitant l’accès au <b>savoir</b>. Aujourd’hui, <b>Gutenberg</b> est reconnu comme l’une des figures les plus influentes de l’histoire mondiale, son invention ayant façonné le monde tel que nous le connaissons.
+		</p>
+ 
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/X1SsxDZx2UA" title="Au cœur de l&#39;Histoire :  Gutenberg et la révolution de l’imprimerie (Récit intégral)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Livres imprimés</h2>
+		<p>
+			Les <b>livres imprimés</b>, apparus au milieu du <b>XVe siècle</b> grâce à l’invention de l’<b>imprimerie</b> par <b>Johannes Gutenberg</b>, marquent un tournant décisif dans l’histoire de la transmission du savoir. Avant cette révolution, les livres étaient laborieusement copiés à la main par des moines ou 
+            des scribes, rendant leur production longue, coûteuse et réservée à une <b>élite</b>. L’<b>imprimerie</b>, basée sur des caractères mobiles métalliques réutilisables, permet pour la première fois une production en masse des textes, réduisant considérablement le coût et le temps nécessaires à leur fabrication.
+<br>
+            Les premiers livres imprimés, appelés <b>incunables</b> (du latin <b>incunabula</b>, signifiant "dans le berceau"), incluent principalement des textes <b>religieux</b>, comme la célèbre <b>Bible à 42 lignes de Gutenberg</b>, mais aussi des œuvres <b>littéraires</b>, <b>scientifiques</b> et <b>juridiques</b>. Grâce à cette nouvelle technologie, 
+            la diffusion des idées connaît une accélération spectaculaire. Les livres imprimés favorisent l’émergence de la <b>Réforme protestante</b>, l’essor des <b>sciences</b> et le renouveau des études classiques, participant pleinement à des mouvements tels que la <b>Renaissance</b> et les <b>Lumières</b>.
+<br>
+            Le <b>livre imprimé</b> se distingue également par sa <b>standardisation</b> et sa <b>lisibilité</b> accrue. Il devient possible d’ajouter des innovations comme les <b>titres</b>, les <b>index</b>, la <b>pagination</b> et les <b>tables des matières</b>, rendant l’utilisation des ouvrages plus pratique. En l’espace de quelques décennies, des <b>imprimeries</b> 
+            apparaissent dans toute l’Europe, transformant les grandes villes en centres de production <b>culturelle</b>.
+<br>
+            Le <b>livre imprimé</b> se distingue également par sa <b>standardisation</b> et sa <b>lisibilité</b> accrue. Il devient possible d’ajouter des innovations comme les <b>titres</b>, les <b>index</b>, la <b>pagination</b> et les <b>tables des matières</b>, rendant l’utilisation des ouvrages plus pratique. En l’espace de quelques décennies, des <b>imprimeries</b> 
+            apparaissent dans toute l’Europe, transformant les grandes villes en centres de production <b>culturelle</b>.
+            Même après plusieurs siècles, les <b>livres imprimés</b> restent un pilier fondamental de la <b>culture</b>. Leur <b>durabilité</b>, leur capacité à rassembler et transmettre des idées, et leur rôle dans la construction de sociétés modernes témoignent de leur importance historique et contemporaine.
+		</p>
+	
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/O2dK6SbK-oo" title="LE 1ER LIVRE IMPRIMÉ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Papier</h2>
+		<p>
+			Le <b>papier</b>, apparu pour la première fois en <b>Chine</b> vers <b>200 av. J.-C.</b>, est une invention révolutionnaire qui a transformé la transmission du savoir et la <b>communication</b>. Créé par <b>Cai Lun</b>, un fonctionnaire de la cour impériale, il est fabriqué à partir de fibres végétales comme le <b>bambou</b>, l’écorce de mûrier, 
+            le <b>chanvre</b> ou les <b>chiffons</b>, qui sont broyés, mélangés à de l’eau, puis séchés en fines feuilles. Plus léger, moins coûteux et plus facile à produire que le <b>papyrus</b> ou le <b>parchemin</b>, le <b>papier</b> devient rapidement un support d’écriture idéal.
+<br>
+            Son utilisation se répand dans toute l’Asie grâce aux routes commerciales. Au <b>VIIIe siècle</b>, la technique de fabrication du <b>papier</b> atteint le monde arabe, où elle est améliorée, notamment à <b>Bagdad</b>, qui devient un centre majeur de production. À partir du <b>XIIe siècle</b>, le <b>papier</b> est introduit en <b>Europe</b> via l’Espagne 
+            musulmane. Sa production s’intensifie grâce à l’apparition des <b>moulins à papier</b>, qui facilitent la transformation des fibres végétales.
+<br>
+            Le <b>papier</b> joue un rôle clé dans l’essor de l’<b>imprimerie</b> au <b>XVe siècle</b>. Il remplace progressivement le <b>parchemin</b>, trop coûteux pour une production de masse, et permet la fabrication rapide de <b>livres imprimés</b>, rendant le <b>savoir</b> plus accessible. Il devient également indispensable pour les documents administratifs, les 
+            correspondances et les <b>journaux</b>, contribuant à la structuration des sociétés modernes.
+<br>
+            Grâce à sa polyvalence, le <b>papier</b> s’adapte à de nombreux usages : <b>éducation</b>, <b>art</b>, <b>commerce</b>, et <b>science</b>. Au fil des siècles, il évolue en termes de qualité et de production, notamment avec l’utilisation de la pâte à <b>papier</b> issue du <b>bois</b> au <b>XIXe siècle</b>, qui réduit encore les coûts et rend le <b>papier</b> omniprésent dans la vie quotidienne.
+            Aujourd’hui, malgré la numérisation croissante, le <b>papier</b> reste un support essentiel pour de nombreuses activités, notamment l’impression, l’emballage et l’art. Sa longue histoire témoigne de son rôle central dans le développement des <b>civilisations</b> et de son influence durable sur la <b>culture humaine</b>.
+		</p>
+		
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/PwnZFlxkm18" title="Histoire de la fabrication du papier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <a class="Bottom1" href="../Page-4/Page-4-fr.html">Suivant</a>
+	<a class="Bottom2" href="../Page-2/Page-2-fr.html">Précédent</a>
+	<a class="Bottom3" href="../index/index-fr.html">Accueil</a>
+
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

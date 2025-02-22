@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - The Antiquity and the Origins of Writing (around 3000 BC)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> English</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Theme</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Languages</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-1/Page-1-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-1/Page-1-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-1/Page-1-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-1/Page-1-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Sign up</b></button>
+            <button id="connectBtn"><b>Logging</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Log out</b><div id="statusText"><b>Not logged</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Sign up</b></button>
+            <button onclick="showLoginPopup()"><b>Logging</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Languages 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-1/Page-1-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-1/Page-1-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-1/Page-1-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-1/Page-1-es.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Search <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Theme 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>The Antiquity and the Origins of Writing (around 3000 BC)</h1>
+	<h2>Cuneiform Writing</h2>
+		<p>
+			The <b>cuneiform</b> script, which appeared in <b>Mesopotamia</b> around <b>3300 BC</b>, is considered to be one of the earliest 
+			systems of <b>writing</b> history. Developed by the <b>Sumerians</b>, it was originally used for <b>administrative</b> purposes 
+			and <b>accountants</b>, particularly to record <b>trade</b> flows and manage <b>agricultural</b> commodity stocks. The term 
+			"<b>cuneiform</b>" comes from the Latin <b>cuneus</b>, meaning "corner", in reference to the shape of the characters in nails or corners, obtained 
+			by pressing a cut <b>calama</b> from a reed rod onto wet <b>clay</b> tablets. Once engraved, these tablets were dried 
+			sun or baked to ensure <b>sustainability</b>.
+<br>
+            Originally, the <b>cuneiform</b> script was <b>pictographic</b>: each symbol represented an object or idea. For example, a head drawing 
+            de bœuf meant "beef". Over time, these designs have been simplified and standardized, evolving into a system of <b>abstract</b> and <b>phonetic</b> signs. 
+            This evolution has allowed to transcribe not only proper names and complex ideas, but also various languages such as <b>Sumerian</b>, <b>Akkadian</b>, 
+            <b>Babylonian</b> and <b>Assyrian</b>, which has encouraged its adoption in a vast region of the <b>Middle East</b>.
+<br>
+            Beyond the simple <b>economic</b> management, <b>cuneiform</b> writing has been used for <b>religious</b> texts, codes of laws (such as the famous <b>Code of Hammurabi</b>), 
+            <b>literary</b> narratives (such as The <b>Epic of Gilgamesh</b>), and <b>historical</b> documents. It allowed the creation of the first <b>libraries</b>, such as that of <b>Assurbanipal</b> 
+            <b>Nineveh</b>, where thousands of tablets were found.This system lasted for more than <b>3,000 years</b>, before gradually disappearing with the advent of simpler <b>alphabets</b> such as those of the <b>Phoenicians</b>.
+<br>
+            The <b>cuneiform</b> script represents a major turning point in <b>human history</b>, marking the passage from <b>prehistory</b> to <b>history</b> and paving the way for <b>conservation</b> 
+            and the lasting transmission of <b>knowledge</b> through the ages. Today, its decipherment in the <b>19th century</b> has allowed a better understanding of <b>ancient civilizations</b> and their contribution to our <b>cultural heritage</b>
+		</p>
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/8vW0lzGBArk" title="L&#39;invention de l&#39;écriture (Hiéroglyphe - Cunéiforme) - Le Voyage vers la Civilisation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	<h2>Papyrus</h2>
+		<p>
+			<b>Papyrus</b> is one of the earliest known <b>writing</b> materials, used mainly by <b>ancient Egyptian</b> civilizations from <b>3000 BC</b>. Made from the plant 
+			of the same name, which grew in abundance along the <b>Nile</b>, it represented a major advance compared to the <b>clay</b> tablets used in <b>Mesopotamia</b>. The manufacture of <b>papyrus</b> consisted 
+			to cut the stems of the plant into thin strips, which were arranged in crossed layers, hammered out and then glued together with natural <b>sap</b>. After drying, a sheet was obtained 
+			flexible, lightweight and easy to carry.
+<br>
+            <b>Papyrus</b> was used to write with brushes or <b>calames</b> dipped in soot-based <b>ink</b> or natural <b>pigments</b>. It was mainly used to record <b>religious</b>, <b>administrative</b> 
+            and <b>literary</b>, but also letters and <b>legal</b> contracts. The <b>papyrus</b> sheets could be assembled into rolls, making it easier to store and consult documents. 
+            These scrolls, called <b>volumes</b>, were often stored in <b>libraries</b>, such as the famous <b>library of Alexandria</b>.
+<br>
+            The use of <b>papyrus</b> spread rapidly throughout the <b>Mediterranean</b> basin thanks to <b>Egyptian</b> trade. However, its fragility in the face of <b>humidity</b> and its relatively high cost limited its use to 
+            important documents. From the <b>3rd century AD</b>, it was gradually replaced by <b>parchment</b>, made from animal skins, which was more durable and better suited to humid climates.
+<br>
+            Despite this, the <b>papyrus</b> remains a symbol of early <b>writing</b> and <b>knowledge</b> transmission. The fragments found today, thanks to the arid conditions of <b>Egypt</b>, offer us valuable testimonies 
+            On the <b>culture</b>, <b>religion</b> and daily life of <b>antiquity</b>. It is an essential milestone in the history of <b>writing</b> media, linking early civilizations to later <b>technological</b> advances.
+		</p>
+
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/v0K3dnwAoKg" title="Papyrus (toi-même)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Stylus and Wax Tablets</h2>
+		<p>
+			<b>Stylus</b> and <b>wax tablets</b> were widely used <b>writing</b> tools in <b>antiquity</b>, especially by the <b>Greeks</b> and <b>Romans</b>. The <b>wax tablet</b> consisted of a wooden frame filled with a thin 
+			<b>wax</b> layer, forming a reusable surface for <b>writing</b>. The <b>stylus</b>, or <b>stylet</b>, was a sharp instrument made of <b>metal</b>, <b>bone</b> or <b>wood</b>, used to engrave letters or numbers in <b>wax</b>. The other end 
+			of the <b>stylus</b>, flattened, allowed to erase the inscriptions by smoothing the <b>wax</b>, making this practical support for temporary writings.
+<br>
+            These tablets were used for a variety of tasks, from taking notes and writing <b>administrative</b> documents to teaching. Students, for example, used them to practice <b>writing</b> and 
+            <b>mathematics</b>. The tablets could be connected together to form <b>diptychs</b> or <b>triptychs</b>, thus increasing the space available for <b>writing</b>, making them ideal for longer texts such as contracts or letters.
+<br>
+            The main advantage of <b>wax tablets</b> was their <b>reusability</b>, in contrast to more expensive media such as <b>papyrus</b> or <b>parchment</b>. They were particularly popular in environments where <b>writing</b> was required to be 
+            frequently changed or corrected. However, their durability was limited: the <b>wax</b> could melt under the effect of heat or deteriorate over time.
+<br>
+            These tools were widely used throughout the <b>Roman Empire</b> and remained in use for several centuries, until the advent of <b>paper</b>. Their simplicity and economic character have made them essential supports for everyday life, including 
+            for rapid communication and learning tasks. <b>Wax</b> <b>stylus</b> and <b>tablets</b> are now a fascinating testimony to the creativity of <b>ancient civilizations</b> in meeting their practical needs for <b>writing</b>.
+		</p>
+        
+		<iframe width="1000" height="630" src="https://www.youtube.com/embed/AeisV2eZXb4" title="HA#5 : Tablettes de cire, 33 siècles d&#39;écriture !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+		<button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+	<a class="Bottom1" href="../Page-2/Page-2-fr.html">Next</a>
+	<a class="Bottom2" href="../index/index-en.html">Home</a>
+    
+	<script src="../Main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - Realidad aumentada (RA) y realidad virtual (VR) (siglo XX - XXI)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Español</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Investigación...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Tema</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Lenguas</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-6/Page-6-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-6/Page-6-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-6/Page-6-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-6/Page-6-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Registrarse</b></button>
+            <button id="connectBtn"><b>Conectarse</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Desconectarse</b><div id="statusText"><b>No conectado</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Registrarse</b></button>
+            <button onclick="showLoginPopup()"><b>Conectarse</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Lenguas 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-6/Page-6-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-6/Page-6-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-6/Page-6-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-6/Page-6-es.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Investigación <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Tema 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>Realidad aumentada (RA) y realidad virtual (VR) (siglo XX - XXI)</h1>
+    <h2>Realidad aumentada (1990)</h2>
+        <p>
+            La <b>realidad aumentada (AR)</b> desarrollada en los años <b>1990</b> es una tecnología que superpone elementos digitales a nuestro entorno real en tiempo real. A diferencia de la <b>realidad virtual</b>, que sumerge al usuario en un mundo totalmente virtual, la RA enriquece el mundo físico añadiendo información visual y sonora 
+            o interactivas, visibles a través de dispositivos como <b>gafas conectadas</b>, <b>smartphones</b> o <b>tablets</b>.
+<br>
+            El concepto de <b>realidad aumentada</b> toma forma ya en los años <b>1960</b> con los primeros sistemas de visualización, pero es en los años <b>1990</b> que la tecnología se hace más concreta. En <b>1992</b>, el investigador <b>Tom Caudell</b> introdujo el término "<b>realidad aumentada</b>" para describir una herramienta utilizada por <b>Boeing</b> para ayudar a los técnicos en el montaje de aviones. 
+            Poco después, los investigadores diseñan sistemas que combinan <b>cámaras</b>, <b>sensores</b> y <b>pantallas</b> para insertar imágenes virtuales en el campo de visión del usuario.
+<br>
+            La AR encuentra aplicaciones en el ámbito profesional. Se utiliza para la formación de <b>cirujanos</b>, el <b>mantenimiento industrial</b> y el <b>ejército</b>, donde proporciona información crítica directamente en el campo visual de los soldados. En <b>arquitectura</b> y <b>diseño</b>, la RA facilita la visualización de proyectos mediante 
+            Integrar modelos 3D en entornos reales.
+<br>
+            En los años <b>2000</b>, el auge de los <b>smartphones</b> y las <b>cámaras integradas</b> democratiza la RA. Aplicaciones como <b>Pokémon Go</b> (<b>2016</b>) están popularizando esta tecnología entre el público en general, integrándola al entretenimiento. Al mismo tiempo, innovaciones como las <b>gafas HoloLens</b> de <b>Microsoft</b> o los cascos <b>Magic Leap</b> están empujando los límites de la RA en 
+            Educación<b>, salud</b> y comercio</b>.
+<br>
+            La <b>realidad aumentada</b> también está transformando la experiencia del usuario en áreas como <b>marketing</b>, <b>retail</b> o <b>turismo</b>, ofreciendo soluciones inmersivas e interactivas. Permite, por ejemplo, probar muebles en su salón antes de comprarlos o visualizar monumentos históricos desaparecidos.
+            Aunque prometedora, la AR plantea desafíos tecnológicos, como el <b>poder de cálculo</b> requerido, así como cuestiones éticas relacionadas con la <b>privacidad</b> y la <b>dependencia</b>. Sin embargo, sigue siendo una tecnología en plena expansión con un enorme potencial para mejorar la interacción entre el mundo físico y el digital.
+ 
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/HiVN3nWgCnA" title="La Réalité Augmentée - 60 secondes pour comprendre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Realidad virtual (años 80 - hoy)
+        <p>
+            La <b>realidad virtual (RV)</b> es una tecnología inmersiva que sumerge al usuario en un entorno simulado en <b>3D</b>, a menudo interactivo. Esta experiencia es posible gracias a los <b>cascos</b> equipados con pantallas, <b>sensores de movimiento</b> y a veces <b>controladores manuales</b>, que permiten navegar e interactuar en un mundo virtual. Aunque sus primeros 
+            Las bases se establecen ya en los años <b>1960</b>, la RV comienza a tomar forma concreta en los años <b>1980</b> gracias a avances tecnológicos significativos.
+<br>
+            El término "<b>realidad virtual</b>" es popularizado por <b>Jaron Lanier</b>, fundador de <b>VPL Research</b>, que desarrolla <b>cascos de RV</b> y <b>guantes de datos</b> para la interacción táctil con entornos digitales. Estos sistemas, aunque vanguardistas, son costosos y limitados por la <b>potencia informática</b> de la época, lo que restringe su adopción a los sectores especializados 
+            como la <b>investigación</b>, la <b>medicina</b> o el <b>entrenamiento militar</b>.
+<br>
+            En los años <b>1990</b>, la realidad virtual atrajo la atención del público general a través de experimentos como simuladores de árcade o dispositivos inmersivos presentados por empresas como <b>SEGA</b> y <b>Nintendo</b>. Sin embargo, estos primeros intentos se ven frenados por problemas de <b>coste</b>, baja <b>resolución</b> y eficacia limitada, lo que impide una adopción masiva.
+            La RV experimentó un renacimiento a principios de <b>2010</b> con la llegada de cascos más potentes y asequibles como el Oculus Rift, seguido por productos competidores como el <b>HTC Vive</b>, el <b>PlayStation VR</b> o el <b>Meta Quest</b>. Estos dispositivos utilizan <b>pantallas de alta definición</b>, <b>sensores precisos</b> y <b>algoritmos sofisticados</b> para ofrecer una inmersión sin 
+            anterior. La RV se extiende entonces a muchos campos, en particular los <b>videojuegos</b>, la <b>formación profesional</b>, la <b>medicina</b>, la <b>arquitectura</b> e incluso el <b>turismo virtual</b>.
+<br>
+            Hoy en día, la realidad virtual continúa perfeccionándose con la integración de tecnologías como el <b>seguimiento ocular</b>, la <b>realidad mixta</b> (que combina RV y realidad aumentada), y accesorios hápticos que enriquecen la experiencia sensorial. También abre nuevas perspectivas en ámbitos como la <b>educación</b> mediante simulaciones realistas o el <b>bienestar</b>, 
+            Ofreciendo entornos relajantes.
+            A pesar de sus promesas, la realidad virtual aún tiene que superar desafíos, especialmente en términos de <b>costo</b>, <b>accesibilidad</b> y <b>comodidad</b> (ciberenfermedad). Sin embargo, sigue siendo una tecnología clave en la transformación digital, con un potencial ilimitado para reinventar nuestras interacciones con el mundo virtual.
+        </p>
+
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/lqCj_kvEu7k" title="La Réalité Virtuelle - 60 secondes pour comprendre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Realidad mixta (siglo XXI)</h2>
+        <p>
+            La <b>realidad mixta (RM)</b> que surgió en el siglo XXI combina las características de la <b>realidad virtual (RV)</b> y la <b>realidad aumentada (AR)</b>, lo que permite integrar objetos digitales interactivos en un entorno real y ofrece una inmersión más profunda que la RA por sí sola. Permite al usuario interactuar simultáneamente con elementos físicos y virtuales, 
+            Mientras se mantiene una conciencia de su entorno físico. Este concepto fue popularizado por empresas como <b>Microsoft</b> con su casco <b>HoloLens</b>, que es uno de los primeros dispositivos en ofrecer una experiencia de realidad mixta.
+<br>
+            A diferencia de la RA, que superpone información digital sobre el entorno real, la RM permite una interacción más compleja entre el mundo real y el virtual. Por ejemplo, los objetos virtuales pueden colocarse en un espacio real y responder a las acciones del usuario de una manera más realista, como si el objeto virtual estuviera realmente allí. Este tipo de interacción se hace 
+            Es posible mediante tecnologías avanzadas como el <b>reconocimiento de objetos</b>, la <b>cartografía 3D</b> y la <b>detección de movimiento</b>.
+<br>
+            Las aplicaciones de la <b>realidad mixta</b> son amplias y variadas. En el campo de la <b>medicina</b> se utiliza para simulaciones quirúrgicas, lo que permite a los profesionales practicar en un entorno virtual antes de realizar operaciones reales. En <b>educación</b>, la RM transforma el aprendizaje creando experiencias inmersivas donde los estudiantes pueden interactuar con 
+            Modelos 3D de objetos o conceptos, haciendo que los materiales complejos sean más accesibles. En el sector de la <b>arquitectura</b>, la realidad mixta permite a arquitectos y clientes visualizar proyectos en 3D en un espacio real, antes de su construcción.
+<br>
+            La <b>realidad mixta</b> también se está desarrollando en el campo del <b>entretenimiento</b>, con juegos y películas que utilizan elementos virtuales interactivos en un entorno real. En el mundo empresarial, la RM se aplica a la <b>formación</b>, la <b>colaboración remota</b> y el <b>diseño de productos</b>. Al combinar las ventajas de la AR y la RV, la <b>realidad mixta</b> abre el camino a 
+            Experiencias digitales más fluidas y dinámicas que antes no eran posibles.
+            Aunque la RM es una tecnología en desarrollo, ya tiene el potencial de transformar profundamente los sectores industrial, educativo y creativo. Con la mejora continua de las interfaces y dispositivos, la <b>realidad mixta</b> podría convertirse en una herramienta imprescindible en la evolución de nuestra interacción con el mundo digital.
+        </p>
+
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/XtTxCqPbCds" title="Qu&#39;est ce que la réalité mixte?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <a class="Bottom1" href="../Page-7/Page-7-fr.html">Siguiente</a>
+	<a class="Bottom2" href="../Page-5/Page-5-fr.html">Precedente</a>
+	<a class="Bottom3" href="../index/index-fr.html">Acogida</a>
+
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

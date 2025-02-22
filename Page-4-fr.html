@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - Les Lumières et l’industrialisation (XVIIIe - XIXe siècle)</title>
+</head>
+    
+<body>
+
+	<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">Français</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Rechercher...">
+            <button class="SearchBtn" onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Theme</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Langues</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-4/Page-4-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-4/Page-4-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-4/Page-4-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-4/Page-4-fr.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>S'inscrire</b></button>
+            <button id="connectBtn"><b>Se connecter</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Se déconnecter</b><div id="statusText"><b>Non connecté</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>S'inscrire</b></button>
+            <button onclick="showLoginPopup()"><b>Se connecter</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav" id="myBlock" class="block">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Langues 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-4/Page-4-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-4/Page-4-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-4/Page-4-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-4/Page-4-fr.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Recherche <button class="SearchBtn" onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Theme 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>Les Lumières et l’industrialisation (XVIIIe - XIXe siècle)</h1>
+	<h2>Presse rotative (XIXe siècle)</h2>
+		<p>
+			<b>La presse rotative</b>, inventée au <b>XIXe siècle</b>, marque une étape majeure dans l’histoire de l’<b>impression</b> et de la diffusion de l’<b>information</b>. Son principe repose sur des <b>cylindres rotatifs</b> qui permettent d’imprimer rapidement de grandes quantités de textes et d’images sur des rouleaux de <b>papier</b>. 
+            Cette invention, attribuée à l’ingénieur allemand <b>Friedrich Koenig</b> et perfectionnée par <b>Richard March Hoe</b> aux <b>États-Unis</b>, remplace les presses à <b>platine</b> utilisées depuis <b>Gutenberg</b>, qui étaient beaucoup plus lentes.
+<br>
+			La presse rotative connaît son essor à une époque où les besoins en impression explosent, notamment avec <b>la montée en puissance de la presse écrite, l’alphabétisation croissante et l’expansion des journaux</b>. Grâce à sa vitesse de production, elle permet de tirer des milliers d’exemplaires en quelques 
+			heures, rendant les journaux et les livres accessibles à un public bien plus large. En outre, les coûts de production diminuent, ce qui favorise une baisse des prix des publications.
+<br>
+			Les améliorations apportées tout au long du XIXe siècle, comme l'utilisation du papier en continu (plutôt qu’en feuilles individuelles) et l’impression recto-verso simultanée, optimisent encore davantage son efficacité. Ces avancées permettent la création de journaux à grand tirage, comme les quotidiens 
+			populaires, qui deviennent <b>un vecteur clé de l’information et de l’éducation des masses.</b>
+<br>
+            La presse rotative influence aussi d'autres secteurs, comme l’<b>édition de livres</b>, la <b>publicité</b> et les imprimés <b>industriels</b>. Elle contribue à la <b>standardisation des publications</b> et à l’essor de la <b>communication visuelle</b> grâce à l’intégration progressive des <b>illustrations</b> et des <b>photographies</b>. 
+            Cette technologie a profondément transformé la société en démocratisant l’accès à l’<b>information</b> et en accélérant la diffusion des <b>idées</b>. 
+            En rendant possible une presse libre et abordable, la presse rotative a joué un rôle central dans l’émergence des <b>démocraties modernes</b> et dans l’<b>industrialisation de la culture</b>. 
+            Aujourd’hui encore, bien qu’elle ait évolué avec les techniques <b>numériques</b>, son héritage demeure au cœur des systèmes d’<b>impression contemporains</b>.
+		</p>
+ 
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/3_yNXzOjgVc" title="imprimer en rotative - Imprimerie A. Geiger" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Machine à écrire</h2>
+		<p>
+			La machine à écrire</b>, inventée au <b>XIXe siècle</b>, a transformé le monde de l’<b>écriture</b> et de l'<b>administration</b> en automatisant la transcription manuelle des textes. Avant son invention, l’écrire se faisait exclusivement à la main, ce qui était long et peu pratique, surtout pour les tâches répétitives comme la rédaction de <b>lettres</b> et de <b>documents</b>. 
+            Le premier modèle commercialement viable de machine à écrire a été conçu en 1868 par <b>Christopher Latham Sholes</b>, un <b>journaliste américain</b>, en collaboration avec <b>Samuel Soule</b> et <b>Carlos Glidden</b>.
+            Le brevet de cette machine a été vendu à l'entreprise <b>Remington</b>, qui a lancé la première machine à écrire commerciale en 1873.
+<br>
+            La machine à écrire utilise un <b>clavier de touches</b>, chacune correspondant à une <b>lettre</b> ou un <b>symbole</b>, qui, lorsqu'elles sont pressées, frappent un ruban d'<b>encre</b> pour imprimer des <b>caractères</b> sur du <b>papier</b>. Cette innovation permet de taper beaucoup plus rapidement qu’à la main et de produire des documents plus uniformes.
+            Les machines à écrire mécaniques se popularisent rapidement dans les <b>bureaux</b>, révolutionnant ainsi l'<b>administration</b>, le <b>journalisme</b> et la <b>correspondance personnelle</b>
+<br>
+            Les machines à écrire sont devenues des outils incontournables dans de nombreux secteurs au cours du <b>XXe siècle</b>, notamment dans les <b>entreprises</b>, les agences de presse et les administrations publiques. Leur influence se fait aussi sentir dans la vie domestique, notamment grâce à l’apparition de machines <b>portables</b> et à prix abordable à partir des années 1920.
+            Parallèlement, des modèles spécialisés comme la machine à écrire <b>électrique</b>, qui permettait de taper plus rapidement et moins bruyamment, voient le jour.<br>
+<br>
+            L'invention de la machine à écrire a également modifié le rôle des <b>secrétaires</b> et des <b>dactylographes</b>, dont les compétences en dactylographie sont devenues essentielles. 
+            Cependant, à partir des années 1980, les <b>ordinateurs personnels</b> commencent à remplacer les machines à écrire, offrant des fonctionnalités supplémentaires comme la <b>correction automatique</b> et le <b>traitement de texte numérique</b>.
+            Malgré sa disparition progressive, la machine à écrire a laissé une empreinte durable dans la culture, symbolisant une époque où la <b>rapidité</b> et la <b>productivité</b> étaient directement liées à l'écriture mécanique. 
+            Aujourd’hui, elle reste un objet de collection et un symbole de l’évolution des technologies de l’<b>écriture</b>.</p>
+        </p>
+                
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/dWATVeuG9vQ" title="Hermes Baby: Le premier laptop de l&#39;histoire | SWISS MADE 🇨🇭" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>Éducation</h2>
+		<p>
+			<b>L'éducation</b>, dans son sens le plus large, désigne l'ensemble des processus par lesquels un individu apprend et se développe tout au long de sa vie. 
+            Elle englobe non seulement l'acquisition de <b>connaissances</b> et de <b>compétences pratiques</b>, mais aussi l'apprentissage de <b>valeurs</b>, de <b>normes sociales</b> et de <b>comportements</b> qui permettent de s'intégrer dans la société. Historiquement, l'éducation a évolué en fonction des structures sociales, politiques et économiques de chaque époque.
+            Dans les sociétés anciennes, l'éducation était souvent réservée aux <b>élites</b> et se faisait par la transmission <b>orale</b> ou à travers des <b>manuscrits</b> rédigés à la main. L'enseignement était centré sur les savoirs <b>religieux</b> et <b>philosophiques</b>. Cependant, avec l'invention de l'<b>écriture</b>, puis de l'<b>imprimerie</b>, l'accès à la connaissance se démocratise progressivement, surtout à partir de la <b>Renaissance</b>.
+<br>
+            L'éducation moderne prend forme au <b>XIXe siècle</b> avec l'instauration des systèmes scolaires <b>publics</b> dans de nombreux pays. L'objectif est d'offrir une instruction de masse, permettant à tous les enfants d'accéder à des connaissances fondamentales. 
+            L'enseignement devient plus structuré, avec des <b>programmes scolaires</b>, des <b>disciplines spécialisées</b> et un accent sur les <b>sciences</b>, les <b>langues</b> et les <b>mathématiques</b>. 
+            À cette époque, l'<b>école</b> devient un outil essentiel de formation citoyenne et de <b>mobilité sociale</b>.
+            Au XXe siècle, l'éducation se diversifie avec l'essor de nouvelles <b>disciplines</b>, l'<b>internationalisation des échanges éducatifs</b>, et l'inclusion de toutes les couches sociales. Les réformes éducatives visent également à adapter l'éducation aux évolutions <b>technologiques</b>, <b>économiques</b> et <b>culturelles</b>. 
+            L'enseignement supérieur se développe, et les <b>universités</b> deviennent des lieux de recherche et d'<b>innovation</b>.
+<br>
+            Aujourd'hui, l'éducation continue de se transformer, avec l'intégration des <b>technologies numériques</b>, l'accent mis sur l'<b>apprentissage tout au long de la vie</b> et l'égalisation des chances d'accès à l'<b>instruction</b> dans de nombreuses régions du monde. L'éducation joue un rôle crucial dans le <b>développement personnel</b>, la <b>cohésion sociale</b> et le <b>progrès économique</b>, tout en étant un pilier de la <b>démocratie</b> et de la <b>justice sociale</b>. 
+            L’enjeu majeur reste de rendre l'éducation accessible à tous, indépendamment de leur origine, statut social ou géographique.
+		</p>
+
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <a class="Bottom1" href="../Page-5/Page-5-fr.html">Suivant</a>
+	<a class="Bottom2" href="../Page-3/Page-3-fr.html">Précédent</a>
+	<a class="Bottom3" href="../index/index-fr.html">Accueil</a>
+
+    <script src="../Main.js"></script>
+    
+</body>
+</html>

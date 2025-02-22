@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-link" rel="stylesheet" href="../Style/Style-2.css">
+    <link rel="icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Style/images/EvoSphere-Logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoSphere - La era electrónica y digital (siglo XX)</title>
+</head>
+    
+<body>
+<!-- HEADER NORMAL (AFFICHÉ SUR GRAND ÉCRAN) -->
+    <header class="main-header grid-header">
+        <a class="BigLogo" href="../index/index-fr.html">
+            <img src="../Style/images/EvoSphere-Logo.ico" alt="Logo">
+        </a>
+
+        <h1 class="BigTitle" style="color:black;">EvoSphere <br> Español</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Investigación...">
+            <button onclick="searchGoogle()">👀</button>
+        </div>
+
+        <button class="Theme" id="theme-toggle"><b>🌙 Tema</b></button>
+
+        <div class="language-menu">
+            <button class="menu-btn" onclick="toggleLanguageMenu()"><b>☰ Lenguas</b></button>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../Page-5/Page-5-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                    <li><a href="../Page-5/Page-5-en.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="../Page-5/Page-5-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                    <li><a href="../Page-5/Page-5-es.html" onclick="changeLanguage('es')">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="registerBtn"><b>Registrarse</b></button>
+            <button id="connectBtn"><b>Conectarse</b></button>
+            <button id="disconnectBtn" style="display: none;"><b>Desconectarse</b><div id="statusText"><b>No conectado</b></div> </button>
+        </div>
+    
+            <!-- Menu déroulant -->
+        <div id="dropdownMenu">
+            <button onclick="showRegisterPopup()"><b>Registrarse</b></button>
+            <button onclick="showLoginPopup()"><b>Conectarse</b></button>
+        </div>
+
+        <!-- Popup overlay -->
+        <div id="overlay">
+            <div id="popupContent"></div>
+        </div>
+    </header>
+
+    <!-- BOUTON MENU BURGER (AFFICHÉ SUR PETIT ÉCRAN) -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MENU MOBILE (AFFICHÉ AU CLIC SUR LE BURGER) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggleLanguageMenu()">
+                <div class="language-menu">
+                    <button class="menu-btn-v2" onclick="toggleLanguageMenu()"><a><b>Lenguas 🌍</b></a></button>
+                        <div class="menu-content" id="menu-content">
+                            <ul>
+                                <li><a href="../Page-5/Page-5-fr.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li><a href="../Page-5/Page-5-en.html" onclick="changeLanguage('en')">English</a></li>
+                                <li><a href="../Page-5/Page-5-it.html" onclick="changeLanguage('it')">Italiano</a></li>
+                                <li><a href="../Page-5/Page-5-es.html" onclick="changeLanguage('es')">Español</a></li>
+                            </ul>
+                        </div>
+                </div></a></li>
+            <li><a href="#">Investigación <button onclick="searchGoogle()">🔍</button></a></li>
+            <li><a href="#" onclick="toggleTheme()">Tema 🌙</a></li>
+        </ul>
+    </nav>
+
+<h1>La era electrónica y digital (siglo XX)</h1>
+    <h2>Ordenadores (años 40-70)</h2>
+        <p>
+            Los <b>ordenadores</b>, desarrollados entre los años <b>1940</b> y <b>1970</b>, marcaron el comienzo de una <b>gran revolución tecnológica</b>, transformando profundamente la <b>sociedad</b> y las formas de <b>trabajo</b>. Estas máquinas, inicialmente diseñadas para realizar <b>cálculos complejos</b>, han evolucionado rápidamente hasta convertirse en herramientas
+            Versátiles utilizados en diversos campos, desde la <b>investigación científica</b> a la <b>administración</b>.
+<br>
+            El primer ordenador electrónico, ENIAC (Electronic Numerical Integrator and Computer), fue construido en 1945 en los Estados Unidos. Este aparato de gran tamaño, que ocupa una habitación entera, utiliza tubos de vacío para realizar cálculos y puede realizar en cuestión de segundos operaciones que a los humanos les tomaban horas. 
+            Sin embargo, los primeros ordenadores siguen siendo caros, voluminosos y accesibles sólo para las grandes instituciones.
+            El primer <b>ordenador electrónico</b>, <b>ENIAC</b> (<b>Electronic Numerical Integrator and Computer</b>), se construye en <b>1945</b> en los <b>Estados Unidos</b>. Este aparato de gran tamaño, que ocupa una habitación entera, utiliza <b>tubos de vacío</b> para realizar cálculos y puede realizar en cuestión de segundos operaciones que a los humanos les tomaban horas. 
+            Sin embargo, estos primeros ordenadores siguen siendo costosos, voluminosos y accesibles solo a las grandes <b>instituciones</b>.
+<br>
+            En los años <b>1950</b>, la llegada de los <b>transistores</b> sustituye a los tubos de vacío, haciendo que los ordenadores sean más fiables, menos costosos y más compactos. Máquinas como la <b>IBM 701</b> marcan el comienzo de la informatización de las <b>empresas</b>, especialmente para el procesamiento de datos <b>financieros</b> y tareas <b>administrativas</b>. 
+            Este período también vio el surgimiento de los primeros <b>lenguajes de programación</b> como <b>Fortran</b> y <b>COBOL</b>, que simplificaron la interacción con las computadoras.
+<br>
+            La década de 1960 marca una nueva etapa con la introducción de los circuitos integrados, que miniaturizan aún más los componentes y aumentan la potencia de cálculo. Esto llevó a la creación de máquinas más asequibles, como el PDP-8 de Digital Equipment Corporation, a menudo considerado como el primer mini-ordenador. 
+            Al mismo tiempo, la tecnología de la información se está democratizando en sectores como la educación y la investigación.
+<br>
+            En los años 70, la aparición de los microprocesadores revolucionó la informática al hacer posible la fabricación de ordenadores personales. Máquinas como el Altair 8800 abren la vía a una informática accesible para los particulares. También es la época en que los sistemas operativos, como Unix, comienzan a 
+            Estandarizar el uso de computadoras.
+            Entre <b>1940</b> y <b>1970</b>, los <b>ordenadores</b> pasan de ser herramientas gigantescas destinadas a las élites <b>científicas</b> e <b>industriales</b> a máquinas más pequeñas, más potentes y adecuadas para un uso diversificado. Este período sienta las bases de la <b>informática moderna</b> y de la <b>revolución digital</b> que seguirá. </p>
+        </p>
+
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/9JxHU7fv7Yc" title="L&#39;Histoire Fascinante de l&#39;Ordinateur : Des Origines aux Machines Modernes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+    <h2>Procesamiento de texto</h2>
+        <p>
+            El <b>procesamiento de textos</b> es una tecnología que ha transformado la forma en que se escriben, editan y producen documentos escritos, reemplazando gradualmente a las <b>máquinas de escribir</b> tradicionales. Introducido en los años <b>1960</b>, combina las capacidades de los <b>ordenadores</b> con <b>programas</b> especialmente diseñados para la escritura. 
+            Los primeros sistemas de procesamiento de textos, como el <b>MT/ST</b> (<b>Magnetic Tape/Selectric Typewriter</b>) de <b>IBM</b>, utilizaban una máquina de escribir eléctrica acoplada a cintas magnéticas para grabar y reutilizar texto
+<br>
+            Con el auge de los <b>ordenadores personales</b> en la década de 1980, el procesamiento de textos se hizo más accesible e interactivo. Los <b>programas</b> como <b>WordStar</b>, lanzado en <b>1979</b>, o <b>Microsoft Word</b>, introducido en <b>1983</b>, ofrecen funciones avanzadas con respecto a la escritura manual o mecánica. Estos programas no sólo permiten 
+            Escribir, pero también modificar fácilmente el texto, insertar imágenes, cambiar las <b>fuentes</b> y aplicar un diseño complejo.
+<br>
+            La principal ventaja del procesamiento de texto es su <b>flexibilidad</b> y su <b>facilidad de uso</b>. Elimina la necesidad de reiniciar un documento completo en caso de error, gracias a las funciones de eliminación y corrección rápida. Los usuarios pueden guardar sus archivos, imprimirlos o compartirlos digitalmente, revolucionando así los procesos 
+            de trabajo en <b>oficinas</b>, <b>escuelas</b> y <b>hogares</b>.
+<br>
+            Con el tiempo, el procesamiento de texto ha evolucionado para incorporar herramientas adicionales como <b>ortografía</b> y <b>gramática</b>, <b>reconocimiento de voz</b>, e incluso sugerencias de mejora estilística. Estas innovaciones han aumentado significativamente la <b>productividad</b> y la <b>calidad</b> de los documentos producidos. Con el advenimiento de la 
+            <b>computación en nube</b>, aplicaciones como <b>Google Docs</b> permiten hoy una <b>colaboración en tiempo real</b> entre varios usuarios, marcando un nuevo hito en la historia del procesamiento de textos.El tratamiento de textos se ha convertido en una herramienta imprescindible en todos los ámbitos. No solo ha simplificado la creación de documentos, sino que también 
+            ha allanado el camino para una gestión más eficaz de la información escrita, imponiéndose como tecnología clave de la <b>revolución digital</b>.
+        </p>
+	
+    <h2>Libros electrónicos (e-books)</h2>
+        <p>
+            Los <b>libros electrónicos</b> o <b>e-books</b> representan una revolución en el mundo de la <b>lectura</b> y de la <b>edición</b>. Esta tecnología, que surgió en los años <b>1970</b> con el <b>Project Gutenberg</b>, una iniciativa para digitalizar obras literarias libres de derechos, permite leer libros en formato digital en diversos dispositivos, como <b>ordenadores</b>, 
+            <b>tabletas</b>, los <b>smartphones</b> y las <b>lectoras electrónicas</b>.
+<br>
+            Un <b>e-book</b> es un archivo digital que contiene texto y, a veces, imágenes, accesible mediante formatos específicos como <b>EPUB</b>, <b>PDF</b> o <b>MOBI</b>. Su principal característica es su <b>portabilidad</b>: una sola lector puede contener miles de libros, por lo que es ideal para los <b>lectores ávidos</b> o aquellos que viajan con frecuencia. La introducción de las 
+            primeras lectores comerciales, como el <b>Kindle</b> de <b>Amazon</b> en <b>2007</b>, democratizó los <b>e-books</b>, que ofrecen acceso instantáneo a enormes bibliotecas digitales a través de <b>plataformas en línea</b>.
+<br>
+            Los <b>e-books</b> tienen varias ventajas. Permiten ajustar el tamaño y el estilo de la <b>fuente</b> para ofrecer una <b>lectura</b> adaptada a las necesidades de cada persona, especialmente para personas con problemas de visión</b>. Además, funciones como <b>anotaciones</b>, <b>marcadores de páginas</b>, <b>búsqueda rápida</b> y <b>traducción integrada</b> enriquecen la experiencia de lectura. También son <b>ecológicos</b>, lo que reduce el consumo de <b>papel</b> y los costos de producción y transporte de <b>libros físicos</b>.
+            Sin embargo, los <b>libros electrónicos</b> también plantean desafíos. Las cuestiones de <b>derechos digitales</b> (<b>DRM</b>) y <b>propiedad</b> son controvertidas, ya que los compradores de libros electrónicos a menudo solo poseen una <b>licencia de uso</b>. Además, algunos lectores lamentan la pérdida de la experiencia táctil y sensorial de los <b>libros impresos</b>.
+<br>
+            A pesar de estas limitaciones, los <b>e-books</b> se han convertido en un complemento esencial de los formatos tradicionales. Ofrecen <b>mayor accesibilidad</b> a la <b>lectura</b>, especialmente en áreas donde los <b>libros físicos</b> son escasos o costosos. En el contexto educativo, permiten agrupar <b>manuales</b> y <b>recursos interactivos</b> en un solo dispositivo, transformando el <b>aprendizaje</b>. Combinando <b>practicidad</b>, <b>innovación</b> y <b>ecología</b>, los <b>libros electrónicos</b> han redefinido nuestra relación con la <b>lectura</b>, al tiempo que coexisten
+            con los <b>libros en papel</b> que siguen arraigados en las tradiciones culturales y sentimentales de los <b>lectores</b>.
+        </p>
+		
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/X79Ia9kbLRo" title="Livre électronique : une bibliothèque dans la poche" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Internet (1990)</h2>
+        <p>
+            <b>Internet</b>, lanzado comercialmente en los años <b>1990</b>, transformó el mundo en una red interconectada, revolucionando la <b>comunicación</b>, el <b>comercio</b> y el acceso a la <b>información</b>. Sus orígenes se remontan a los años <b>1960</b>, con el proyecto <b>ARPANET</b> del Departamento de Defensa de los Estados Unidos</b> diseñado para compartir datos entre <b>ordenadores</b>. Sin embargo, en 1990</b>, el investigador británico <b>Tim Berners-Lee</b> 
+            inventa la <b>World Wide Web</b>, una interfaz fácil de usar que permite navegar fácilmente por <b>Internet</b> a través de páginas <b>hipertexto</b>.
+<br>
+            La llegada de <b>Internet</b> al público en general coincide con importantes avances como la creación de los <b>navegadores web</b>, tales como <b>Mosaic</b> en <b>1993</b> y <b>Netscape</b> en <b>1994</b>, que simplifican el acceso a la red. Este período también marca el surgimiento de <b>proveedores de servicios de Internet</b>, que permiten a millones de hogares conectarse desde sus <b>computadoras personales</b>. Desde ahí, <b>Internet</b> se convierte en una plataforma global para el intercambio de
+            <b>correo electrónico</b>, buscar <b>información</b> e interactuar a través de <b>foros</b> o <b>sitios web</b>.
+<br>
+            Uno de los mayores activos de <b>Internet</b> es su papel en la <b>democratización de la información</b>. Los usuarios pueden acceder instantáneamente a contenidos <b>educativos</b>, <b>culturales</b> y <b>científicos</b>, transformando la forma en que se produce y comparte el <b>conocimiento</b>. El <b>comercio electrónico</b>, con pioneros como <b>Amazon</b> y <b>eBay</b>, se desarrolla rápidamente, cambiando los hábitos de consumo. <b>Internet</b> también ha redefinido la <b>comunicación social</b>. El surgimiento de los <b>mensajeros instantáneos</b> y, más tarde, de 
+            <b>redes sociales</b> en los años <b>2000</b>, ha acercado a las personas a pesar de las distancias, al tiempo que crea nuevos desafíos en materia de <b>privacidad</b> y <b>ciberseguridad</b>.
+<br>
+            A pesar de su enorme potencial, <b>Internet</b> también plantea desafíos, como las desigualdades de acceso, la propagación de <b>información falsa</b> y la <b>dependencia digital</b>. Estas cuestiones siguen alimentando los debates sobre el uso <b>ético</b> y responsable de la red. Desde los años <b>1990</b>, <b>Internet</b> se ha convertido en un pilar imprescindible de la vida cotidiana y profesional. Redefinió las <b>relaciones humanas</b>, aceleró la <b>innovación</b> y sentó las bases de un mundo interconectado donde las fronteras geográficas 
+            se desvanecen en beneficio de una <b>economía</b> y una <b>cultura globalizadas</b>.
+        </p>
+
+        <iframe width="1000" height="630" src="https://www.youtube.com/embed/5ee6W1ODvFU" title="Découvrons l&#39;histoire d&#39;internet" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <a class="Bottom1" href="../Page-6/Page-6-fr.html">Siguiente</a>
+	<a class="Bottom2" href="../Page-4/Page-4-fr.html">Precedente</a>
+	<a class="Bottom3" href="../index/index-fr.html">Acogida</a>
+    
+    <script src="../Main.js"></script>
+    
+</body>
+</html>
